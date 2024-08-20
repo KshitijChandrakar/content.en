@@ -15,5 +15,3 @@ The Following Links may work when the server is online.
 [Jellyfin](http://jellyfin.carmeliarose.shop),
 [coder](http://code.carmeliarose.shop),
 [coder](http://coder.carmeliarose.shop)
-
-1st Try
