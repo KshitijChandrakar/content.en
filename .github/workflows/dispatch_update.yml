@@ -12,5 +12,5 @@ jobs:
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.PAT }}
-          repository: 0xWerz/werz
+          repository: KshitijChandrakar/WebsiteFinal
           event-type: update-submodule
