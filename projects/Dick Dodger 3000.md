@@ -1,8 +1,12 @@
 ---
-description: "Game Project I Worked on for my second semester project"
-categories: 'projects'
-tags: [game development, python]
-title: "Dick Dodger 3000"
+description: Game Project I Worked on for my second semester project
+categories: projects
+tags:
+  - game
+  - development
+  - python
+title: Dick Dodger 3000
+bookHidden: true
 ---
 Partial Movenet Implementation.
 Its a game in which a cat dodges dicks. (So Real of Her)
