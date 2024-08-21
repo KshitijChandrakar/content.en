@@ -1,8 +1,10 @@
 ---
 date: 2024-08-09T10:58:08-04:00
-categories: 'Notes'
-tags: [semester3, DBMS]
-title: "DBMS August 9"
+categories: Notes
+tags:
+  - semester3
+  - DBMS
+title: August 9
 weight: 2
 ---
 #databases #semester3  
