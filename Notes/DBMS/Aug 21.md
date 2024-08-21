@@ -1,5 +1,5 @@
 ---
-title: August 21 2024
+title: August 21
 date: 2024-08-21T10:58:08-04:00
 ---
 
