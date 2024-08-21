@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "August 21 Part 2.md",
+                "file": "Notes/DBMS/August 21 Part 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "August 21 Part 2.md",
+            "file": "Notes/DBMS/August 21 Part 2.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "August 21 Part 2.md",
+            "file": "Notes/DBMS/August 21 Part 2.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -127,7 +127,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "August 21 Part 2.md"
+            "file": "Notes/DBMS/August 21 Part 2.md"
           }
         }
       }
@@ -144,10 +144,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ea474ff295ee8305",
+  "active": "773f271db17dc058",
   "lastOpenFiles": [
     "Notes/DBMS/August 21, 2024.md",
-    "August 21 Part 2.md",
+    "Notes/DBMS/August 21 Part 2.md",
     "Notes/DBMS/_index.md",
     "Notes/DBMS/August 9, 2024.md",
     "Notes/DBMS/August 14 2024.md",
