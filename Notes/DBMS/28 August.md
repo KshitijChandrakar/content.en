@@ -1,10 +1,5 @@
 ---
 title: August 28
-categories: Notes
-tags:
-  - DBMS
-  - databases
-  - sql
 ---
 ### Circular Dependency
 ```SQL

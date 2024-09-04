@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/DAA/DBMS Experiment 4.md",
+                "file": "Notes/DBMS/28 August.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Notes/DAA/DBMS Experiment 4.md",
+            "file": "Notes/DBMS/28 August.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Notes/DAA/DBMS Experiment 4.md",
+            "file": "Notes/DBMS/28 August.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -139,7 +139,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Notes/DAA/DBMS Experiment 4.md"
+            "file": "Notes/DBMS/28 August.md"
           }
         }
       }
@@ -156,16 +156,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "773f271db17dc058",
+  "active": "d1bb2c7e57d4a550",
   "lastOpenFiles": [
+    "Notes/DBMS/22 August 2024.md",
+    "Notes/DBMS/August 21 2024.md",
+    "Notes/DBMS/August 14 2024.md",
+    "Notes/DBMS/August 9 2024.md",
+    "Notes/DAA/DBMS Experiment 4.md",
     "Notes/DBMS/28 August.md",
     "Hire Me!/_index.md",
     "Hire Me!",
     "/Notes/_index.md",
     "/Hire Me!/_index.md",
     "/Hire Me!",
-    "Notes/DBMS/22 August 2024.md",
-    "Notes/DAA/DBMS Experiment 4.md",
     "Pasted image 20240904162810.png",
     "Pasted image 20240904162732.png",
     "Pasted image 20240904162709.png",
@@ -176,16 +179,13 @@
     "Pasted image 20240904161514.png",
     "Pasted image 20240904161451.png",
     "Pasted image 20240904161413.png",
-    "Notes/DBMS/August 21 2024.md",
     "AIML 23 August.md",
     "Notes/DAA/DAA 9 August 2024.md",
     "Rational Agents.md",
     "Notes/DBMS/August 9, 2024.md",
-    "Notes/DBMS/August 9 2024.md",
     "projects/Dick Dodger 3000.md",
     "/Notes/DBMS/_index.md",
     "/Notes/DBMS/August 9 2024.md",
-    "Notes/DBMS/August 14 2024.md",
     "Notes/DBMS/August 21, 2024.md",
     "Notes/DBMS/_index.md",
     "/_index.md",
