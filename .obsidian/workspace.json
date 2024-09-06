@@ -37,14 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/DBMS/_index.md",
+                "file": "Notes/DBMS/DBMS Experiment 4.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4bce685b7179fcc1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Internships.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,6 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Internships.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,6 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Internships.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/DBMS/August 9, 2024.md"
+                "file": "Internships.md"
               }
             }
           }
@@ -169,16 +183,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f194deb80d5154b1",
+  "active": "4bce685b7179fcc1",
   "lastOpenFiles": [
+    "Notes/DBMS/DBMS Experiment 4.md",
+    "Internships.md",
+    "Pasted image 20240904185250.png",
+    "Notes/_index.md",
+    "Notes/DBMS/_index.md",
     "Notes/DBMS/August 9, 2024.md",
     "Notes/DBMS/August 21 2024.md",
     "Notes/DBMS/August 9 2024.md",
-    "Notes/DBMS/_index.md",
     "Notes/DAA/DAA 9 August 2024.md",
     "Notes/DBMS/August 21, 2024.md",
     "Notes/DBMS/August 14 2024.md",
-    "Notes/DAA/_index.md",
-    "Notes/_index.md"
+    "Notes/DAA/_index.md"
   ]
 }
