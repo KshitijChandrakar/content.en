@@ -7,7 +7,7 @@ title: Experiment 4
 **SAP:** 500124827
 **Batch:** 49
 **Date:** 4 September 2024
-
+ 
 ## Question 1
 ### Creating the Table
 ```SQL
@@ -15,14 +15,12 @@ CREATE TABLE SALES (
 SaleID number,
 SaleAmount number,
 SaleDate date
-)
 ```
-![]()
-![Pasted](static/Pasted image 20240904144527.png "AA")     
+![[Pasted image 20240904144527.png]]
 ![[Pasted image 20240904144716.png]]
 ### Inserting Values
 ```SQL
-INSERT ALL
+INSERT ALL 
 	into Sales values (110, 4234,'12/12/2024')
 	into Sales values (221, 3211,'12/14/2024')
 	into Sales values (353, 1232,'12/15/2024')
@@ -54,16 +52,15 @@ CREATE TABLE Employees (
     HireDate DATE
 );
 ```
-![[Pasted image 20240904185250.png]]
+
 ### Inserting Values
 ```SQL
-INSERT
-	INTO Employees VALUES (1, 'Ei', '2023-01-15'),
-	INTO Employees VALUES (2, 'Zhongli', '2024-03-20'),
-	INTO Employees VALUES (3, 'Barbatos', '2022-11-08'),
-	INTO Employees VALUES (4, 'Nahida', '2023-07-12'),
-	INTO Employees VALUES (5, 'Doritos', '2024-05-05');
-select * from dual
+INSERT INTO Employees (EmployeeID, Name, HireDate) VALUES
+(1, 'John Doe', '2023-01-15'),
+(2, 'Jane Smith', '2024-03-20'),
+(3, 'Michael Johnson', '2022-11-08'),
+(4, 'Emily Davis', '2023-07-12'),
+(5, 'David Lee', '2024-05-05');
 ```
 
 ### Showing the Values
@@ -93,7 +90,7 @@ foreign key (DepartmentID) references Departments(DepartmentID)
 
 ### Inserting Values
 ```SQL
-insert all
+insert all 
     into Departments Values (1, 'A')
     into Departments Values (2, 'B')
     into Departments Values (3, 'C')
@@ -105,7 +102,7 @@ select * from dual
 
 ```SQL
 
-insert all
+insert all 
     into employees Values (1, 1, 10000)
     into employees Values (2, 4, 10000)
     into employees Values (3, 1, 20000)
@@ -136,17 +133,17 @@ CREATE TABLE Grades (
 ### Inserting Values
 ```SQL
 INSERT ALL
-	INTO Grades VALUES (1, 'Cyno', 80);
-	INTO Grades VALUES (2, 'Jean', 60);
-	INTO Grades VALUES (3, 'Klee', 95);
-	INTO Grades VALUES (4, 'Nilou', 75);
-	INTO Grades VALUES (5, 'Benett', 85);
+	INTO Grades VALUES (1, 'John Doe', 80);
+	INTO Grades VALUES (2, 'Jane Smith', 60);
+	INTO Grades VALUES (3, 'Alice Johnson', 95);
+	INTO Grades VALUES (4, 'Bob Brown', 75);
+	INTO Grades VALUES (5, 'Sarah Lee', 85);
 select * from dual
 ```
 ![[Pasted image 20240904161937.png]]
 ### Selecting the Relevant Values
 ```SQL
-SELECT
+SELECT 
     StudentID,
     StudentName,
     Grade,
@@ -200,7 +197,7 @@ select * from dual
 ![[Pasted image 20240904155614.png]]
 ### Credits More Than 3
 ```SQL
-select StudentID from Enrollments
+select StudentID from Enrollments 
 where CourseID in (
     select CourseID
     from Courses
@@ -305,7 +302,7 @@ where joinDate >= ADD_MONTHS(SYSDATE, -12);
 create table SalesData (
     SaleID Number,
     ProductID Number,
-    SaleAmount Number
+    SaleAmount Number 
 )
 ```
 ![[Pasted image 20240904161451.png]]
@@ -320,7 +317,7 @@ into SalesData values (5, 055, 1000)
 select * from dual
 ```
 ![[Pasted image 20240904161413.png]]
-### Showing
+### Showing 
 ```SQL
 select ProductID
 from SalesData

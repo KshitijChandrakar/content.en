@@ -8,36 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b63133c5dc19ba95",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/DBMS/22 August 2024.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d1bb2c7e57d4a550",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/DBMS/28 August.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "651ae8e17f1aac5b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/DBMS/28 August.md",
+                "file": "Notes/DBMS/DBMS Experiment 4.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fafbe8479655c92f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DBMS Experiment 5.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Notes/DBMS/28 August.md",
+            "file": "DBMS Experiment 5.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Notes/DBMS/28 August.md",
+            "file": "DBMS Experiment 5.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -139,7 +127,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Notes/DBMS/28 August.md"
+            "file": "DBMS Experiment 5.md"
           }
         }
       }
@@ -156,14 +144,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d1bb2c7e57d4a550",
+  "active": "fafbe8479655c92f",
   "lastOpenFiles": [
-    "Notes/DBMS/22 August 2024.md",
+    "Notes/DBMS/DBMS Experiment 4.md",
+    "DBMS Experiment 5.md",
+    "Notes/DBMS/28 August.md",
     "Notes/DBMS/August 21 2024.md",
+    "Pasted image 20240904144527.png",
+    "Notes/DBMS/22 August 2024.md",
     "Notes/DBMS/August 14 2024.md",
     "Notes/DBMS/August 9 2024.md",
-    "Notes/DAA/DBMS Experiment 4.md",
-    "Notes/DBMS/28 August.md",
     "Hire Me!/_index.md",
     "Hire Me!",
     "/Notes/_index.md",
@@ -178,7 +168,6 @@
     "Pasted image 20240904161935.png",
     "Pasted image 20240904161514.png",
     "Pasted image 20240904161451.png",
-    "Pasted image 20240904161413.png",
     "AIML 23 August.md",
     "Notes/DAA/DAA 9 August 2024.md",
     "Rational Agents.md",
@@ -197,7 +186,6 @@
     "recipes",
     "projects",
     "projects/Birds of Yunhan.md",
-    "projects/wordle Solver.md",
     "posts",
     "Notes/DBMS",
     "Notes/DAA",
