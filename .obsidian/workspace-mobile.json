@@ -20,19 +20,31 @@
             }
           },
           {
-            "id": "fafbe8479655c92f",
+            "id": "4ae5b99b56fbc1af",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBMS Experiment 5.md",
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ae083b7d9e36024e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/Internships.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "DBMS Experiment 5.md",
+            "file": "posts/Internships.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "DBMS Experiment 5.md",
+            "file": "posts/Internships.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -127,7 +139,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "DBMS Experiment 5.md"
+            "file": "posts/Internships.md"
           }
         }
       }
@@ -144,8 +156,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fafbe8479655c92f",
+  "active": "ae083b7d9e36024e",
   "lastOpenFiles": [
+    "Untitled.md",
+    "posts/Internships.md",
     "Notes/DBMS/DBMS Experiment 4.md",
     "DBMS Experiment 5.md",
     "Notes/DBMS/28 August.md",
@@ -182,10 +196,8 @@
     "/Notes/DBMS/August 14 2024.md",
     "/Notes/DBMS/August 21, 2024.md",
     "Notes/DBMS/DBMS.md",
-    "_index.md",
     "recipes",
     "projects",
-    "projects/Birds of Yunhan.md",
     "posts",
     "Notes/DBMS",
     "Notes/DAA",
