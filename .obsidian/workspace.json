@@ -1,96 +1,39 @@
 {
   "main": {
-    "id": "e217d7f6c8694d68",
+    "id": "85bdc54935aa0aea",
     "type": "split",
     "children": [
       {
-        "id": "951cef70a2cb6555",
+        "id": "b5aab31dccda8d1f",
         "type": "tabs",
         "children": [
           {
-            "id": "a57bdf641eeda5bd",
+            "id": "0fb9ed8e4c4cdc09",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/DBMS/_index.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f4132e5599afeb80",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/DBMS/August 14 2024.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7f81e16f18916431",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-<<<<<<< Updated upstream
-                "file": "Notes/DBMS/_index.md",
-=======
-                "file": "Notes/DBMS/DBMS Experiment 4.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4bce685b7179fcc1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/DBMS/Experiment 8.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "59ae860447ce14ed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Experiment 9.md",
->>>>>>> Stashed changes
+                "file": "Notes/DBMS/test.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-<<<<<<< Updated upstream
-        "currentTab": 2
-=======
-        "currentTab": 4
->>>>>>> Stashed changes
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "68a97ad7f76281cc",
+    "id": "12bf89254fe0ecb5",
     "type": "split",
     "children": [
       {
-        "id": "5e87ac4fdb177d07",
+        "id": "46babcbf017d4832",
         "type": "tabs",
         "children": [
           {
-            "id": "f194deb80d5154b1",
+            "id": "e24522aa481af8de",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -100,7 +43,7 @@
             }
           },
           {
-            "id": "039b037bfb91f03a",
+            "id": "bec9d7f0781c2884",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -115,7 +58,7 @@
             }
           },
           {
-            "id": "47ffe4064ba2d4ec",
+            "id": "48d7d11fa603992e",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -129,23 +72,20 @@
     "width": 300
   },
   "right": {
-    "id": "eb6f10370acd538c",
+    "id": "e46b630ffb3058bc",
     "type": "split",
     "children": [
       {
-        "id": "1cd64c0614ac906f",
+        "id": "60e098bdf99f06c2",
         "type": "tabs",
         "children": [
           {
-            "id": "6708cb8f9eb8ad08",
+            "id": "73da2893bddbe6dd",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< Updated upstream
-=======
-                "file": "Experiment 9.md",
->>>>>>> Stashed changes
+                "file": "Notes/DBMS/test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,22 +97,19 @@
             }
           },
           {
-            "id": "18fd745db9420236",
+            "id": "18e7b9c90d36538b",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< Updated upstream
-=======
-                "file": "Experiment 9.md",
->>>>>>> Stashed changes
+                "file": "Notes/DBMS/test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "49b7a0be08db3552",
+            "id": "dc41d9575bdbf05c",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -183,16 +120,12 @@
             }
           },
           {
-            "id": "e789dfeaf7cd933b",
+            "id": "4666056b24de2778",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-<<<<<<< Updated upstream
-                "file": "Notes/DBMS/August 9, 2024.md"
-=======
-                "file": "Experiment 9.md"
->>>>>>> Stashed changes
+                "file": "Notes/DBMS/test.md"
               }
             }
           }
@@ -213,38 +146,13 @@
       "command-palette:Open command palette": false
     }
   },
-<<<<<<< Updated upstream
-  "active": "f194deb80d5154b1",
+  "active": "0fb9ed8e4c4cdc09",
   "lastOpenFiles": [
-=======
-  "active": "59ae860447ce14ed",
-  "lastOpenFiles": [
-    "Pasted image 20240925153043.png",
-    "Pasted image 20240925152959.png",
-    "Pasted image 20240925152933.png",
-    "Pasted image 20240925152856.png",
-    "Pasted image 20240925152737.png",
-    "Pasted image 20240925152701.png",
-    "Pasted image 20240925152623.png",
-    "Pasted image 20240925152314.png",
-    "Pasted image 20240925152237.png",
-    "Pasted image 20240925152210.png",
-    "Pasted image 20240925152145.png",
-    "Notes/DBMS/Experiment 8.md",
-    "Experiment 9.md",
-    "Internships.md",
-    "Notes/DBMS/DBMS Experiment 4.md",
-    "Notes/_index.md",
-    "Notes/DBMS/_index.md",
->>>>>>> Stashed changes
-    "Notes/DBMS/August 9, 2024.md",
-    "Notes/DBMS/August 21 2024.md",
-    "Notes/DBMS/August 9 2024.md",
-    "Notes/DBMS/_index.md",
-    "Notes/DAA/DAA 9 August 2024.md",
-    "Notes/DBMS/August 21, 2024.md",
-    "Notes/DBMS/August 14 2024.md",
-    "Notes/DAA/_index.md",
-    "Notes/_index.md"
+    "Notes/DBMS/test.md",
+    "Notes/DBMS/SS3.jpg",
+    "Notes/DBMS/SS2.jpg",
+    "Notes/DBMS/SS1.jpg",
+    "Notes/DBMS/SS0.jpg",
+    "DAA 10_1_2024.md"
   ]
 }
