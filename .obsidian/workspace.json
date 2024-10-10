@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/DAA/Syllabus.md",
+                "file": "Notes/Maths/Syllabus.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/DAA/Syllabus.md",
+                "file": "Notes/Maths/Syllabus.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/DAA/Syllabus.md",
+                "file": "Notes/Maths/Syllabus.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/DAA/Syllabus.md"
+                "file": "Notes/Maths/Syllabus.md"
               }
             }
           }
@@ -148,44 +148,51 @@
   },
   "active": "0fb9ed8e4c4cdc09",
   "lastOpenFiles": [
-    "Notes/DAA/DAA_ Syllabus Th+Lab.pdf",
-    "Notes/DAA/lu196241kux5e.tmp",
-    "Notes/AIML/Syllabus.md",
-    "Notes/DAA/Syllabus.md",
-    "Notes/DBMS/22 August 2024.md",
-    "Notes/DBMS/DBMS Experiment 4.md",
-    "Notes/DBMS/Pasted image 20241008214742.png",
-    "Notes/DBMS/test.md",
-    "Notes/DBMS/Syllabus.md",
-    "Notes/DBMS/_index.md",
-    "Notes/Maths/Syllabus.md",
-    "Notes/DBMS/Theory Syllabus (LMS).pdf",
-    "Notes/Maths/Discrete Mathematical Structures_CSEG2006_B.Tech. SOCS.pdf",
-    "Notes/Maths/1-s2.0-S0968090X22003941-main.pdf",
-    "posts/On Servers.md",
-    "Notes/DBMS/DBMS Experiment 5.md",
-    "Notes/DBMS/DBMS Experiment 9.md",
-    "Notes/DBMS/DBMS Experiment 8.md",
-    "contact.md",
-    "DAA 10_1_2024.md",
-    "AIML 23 August.md",
-    "Notes/Syllabus.md",
-    "Notes/Maths/3577193.3593728.pdf",
-    "Notes/Maths/sensors-23-06214.pdf",
-    "Notes/Maths/A_Fast_Percolation-Dijkstra_SPF_Method_for_Mega-Constellation_Satellite_Network_Routing.pdf",
-    "Notes/Maths/How_Good_is_Neural_Combinatorial_Optimization_A_Systematic_Evaluation_on_the_Traveling_Salesman_Problem.pdf",
     "Notes/Maths/PCNF and PDNF.pdf",
-    "Notes/Maths/Practice Set_Unit 3_DMS.pdf",
+    "Notes/Maths/Syllabus.md",
+    "Notes/OS/Operating System_Syllabus.pdf",
+    "Notes/OS/Unit_1_Operating_Systems_Notes.pdf",
+    "Notes/OS/lu207441l9v77.tmp",
+    "Notes/OS/Operating System_Syllabus.docx",
+    "Notes/_index.md",
+    "Notes/OS/Kshitij_500124827.pdf",
+    "Notes/OS/lu196241kux5j.tmp",
+    "Notes/DBMS/Syllabus.md",
+    "Notes/OS/Hardik-saxena_500120776-OS.pdf",
+    "Notes/DBMS/Notes/22 August 2024.md",
+    "Notes/DBMS/Notes/28 August.md",
+    "Notes/DBMS/Notes/August 14 2024.md",
+    "Notes/DBMS/Notes",
+    "Notes/DBMS/Notes/August 21 2024.md",
+    "Notes/DBMS/Experiments/DBMS Experiment 4.md",
+    "Notes/DBMS/test.md",
+    "Notes/DBMS/SS1.jpg",
+    "Notes/DBMS/SS0.jpg",
+    "Notes/DBMS/Experiments",
+    "Notes/DBMS/Theory Syllabus (LMS).pdf",
+    "contact.md",
+    "posts/Internships.md",
+    "Untitled.md",
+    "Rational Agents.md",
+    "AIML 23 August.md",
+    "Notes/DAA/Syllabus.md",
+    "Notes/AIML/Syllabus.md",
+    "Notes/DBMS/Experiments/Pasted image 20241008214742.png",
+    "Notes/DBMS/_index.md",
+    "posts/On Servers.md",
+    "Notes/DBMS/Experiments/DBMS Experiment 5.md",
+    "Notes/DBMS/Experiments/DBMS Experiment 9.md",
+    "Notes/DBMS/Experiments/DBMS Experiment 8.md",
+    "DAA 10_1_2024.md",
+    "Notes/Syllabus.md",
     "Notes/Untitled.md",
     "Notes/DAA/Assignment 1.md",
-    "Notes/DBMS/Pasted image 20241008214227.png",
-    "Notes/DBMS/Pasted image 20241008213715.png",
-    "Notes/DBMS/Pasted image 20241008213705.png",
-    "Notes/DBMS/Pasted image 20241008175738.png",
-    "Notes/DBMS/Pasted image 20241008175324.png",
-    "Notes/DBMS/Pasted image 20241008175321.png",
-    "Notes/DBMS/Pasted image 20241008175314.png",
-    "Notes/DBMS/Pasted image 20241008174627.png",
-    "Notes/DBMS/SS3.jpg"
+    "Notes/DBMS/Experiments/Pasted image 20241008214227.png",
+    "Notes/DBMS/Experiments/Pasted image 20241008213715.png",
+    "Notes/DBMS/Experiments/Pasted image 20241008213705.png",
+    "Notes/DBMS/Experiments/Pasted image 20241008175738.png",
+    "Notes/DBMS/Experiments/Pasted image 20241008175324.png",
+    "Notes/DBMS/Experiments/Pasted image 20241008175321.png",
+    "Notes/DBMS/Experiments/Pasted image 20241008175314.png"
   ]
 }
