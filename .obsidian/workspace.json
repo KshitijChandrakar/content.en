@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/DBMS/test.md",
+                "file": "Notes/Syllabus.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,8 +85,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/DBMS/test.md",
-                "collapseAll": false,
+                "file": "Notes/Syllabus.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/DBMS/test.md",
+                "file": "Notes/Syllabus.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,16 +125,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/DBMS/test.md"
+                "file": "Notes/Syllabus.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,13 +146,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0fb9ed8e4c4cdc09",
+  "active": "e24522aa481af8de",
   "lastOpenFiles": [
+    "Notes/Untitled.md",
+    "Notes/Syllabus.md",
+    "Notes/Maths",
+    "Notes/DAA/Assignment 1.md",
+    "Pasted image 20241008214742.png",
+    "Pasted image 20241008214227.png",
+    "Notes/DAA/Assignment1 Q5.cpp",
+    "Pasted image 20241008213715.png",
+    "Pasted image 20241008213705.png",
+    "Pasted image 20241008175738.png",
+    "Notes/Assignment1 Q5.cpp",
+    "Pasted image 20241008175324.png",
+    "Pasted image 20241008175321.png",
+    "Pasted image 20241008175314.png",
+    "Notes/DAA/Assignment1 Q3.cpp",
+    "Pasted image 20241008174627.png",
     "Notes/DBMS/test.md",
     "Notes/DBMS/SS3.jpg",
-    "Notes/DBMS/SS2.jpg",
-    "Notes/DBMS/SS1.jpg",
-    "Notes/DBMS/SS0.jpg",
     "DAA 10_1_2024.md"
   ]
 }
