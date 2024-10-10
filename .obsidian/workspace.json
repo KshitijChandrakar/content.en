@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/DBMS/DBMS Experiment 5.md",
+                "file": "Notes/DAA/Syllabus.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/DBMS/DBMS Experiment 5.md",
+                "file": "Notes/DAA/Syllabus.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/DBMS/DBMS Experiment 5.md",
+                "file": "Notes/DAA/Syllabus.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/DBMS/DBMS Experiment 5.md"
+                "file": "Notes/DAA/Syllabus.md"
               }
             }
           }
@@ -148,10 +148,24 @@
   },
   "active": "0fb9ed8e4c4cdc09",
   "lastOpenFiles": [
+    "Notes/DAA/DAA_ Syllabus Th+Lab.pdf",
+    "Notes/DAA/lu196241kux5e.tmp",
+    "Notes/AIML/Syllabus.md",
+    "Notes/DAA/Syllabus.md",
+    "Notes/DBMS/22 August 2024.md",
+    "Notes/DBMS/DBMS Experiment 4.md",
+    "Notes/DBMS/Pasted image 20241008214742.png",
+    "Notes/DBMS/test.md",
+    "Notes/DBMS/Syllabus.md",
+    "Notes/DBMS/_index.md",
+    "Notes/Maths/Syllabus.md",
+    "Notes/DBMS/Theory Syllabus (LMS).pdf",
+    "Notes/Maths/Discrete Mathematical Structures_CSEG2006_B.Tech. SOCS.pdf",
+    "Notes/Maths/1-s2.0-S0968090X22003941-main.pdf",
+    "posts/On Servers.md",
+    "Notes/DBMS/DBMS Experiment 5.md",
     "Notes/DBMS/DBMS Experiment 9.md",
     "Notes/DBMS/DBMS Experiment 8.md",
-    "Notes/DBMS/DBMS Experiment 5.md",
-    "Notes/DBMS/Pasted image 20241008214742.png",
     "contact.md",
     "DAA 10_1_2024.md",
     "AIML 23 August.md",
@@ -160,12 +174,8 @@
     "Notes/Maths/sensors-23-06214.pdf",
     "Notes/Maths/A_Fast_Percolation-Dijkstra_SPF_Method_for_Mega-Constellation_Satellite_Network_Routing.pdf",
     "Notes/Maths/How_Good_is_Neural_Combinatorial_Optimization_A_Systematic_Evaluation_on_the_Traveling_Salesman_Problem.pdf",
-    "Notes/Maths/1-s2.0-S0968090X22003941-main.pdf",
-    "Notes/Maths/Discrete Mathematical Structures_CSEG2006_B.Tech. SOCS.pdf",
     "Notes/Maths/PCNF and PDNF.pdf",
     "Notes/Maths/Practice Set_Unit 3_DMS.pdf",
-    "Notes/Maths/Practice Set_Unit 1_DMS_CSEG2006.pdf",
-    "Notes/AIML/Syllabus Elements of AIML.pdf",
     "Notes/Untitled.md",
     "Notes/DAA/Assignment 1.md",
     "Notes/DBMS/Pasted image 20241008214227.png",
@@ -176,7 +186,6 @@
     "Notes/DBMS/Pasted image 20241008175321.png",
     "Notes/DBMS/Pasted image 20241008175314.png",
     "Notes/DBMS/Pasted image 20241008174627.png",
-    "Notes/DBMS/test.md",
     "Notes/DBMS/SS3.jpg"
   ]
 }
