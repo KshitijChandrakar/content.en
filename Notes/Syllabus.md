@@ -17,5 +17,8 @@ Shortest path problems
 DAA Midsems:
 Unit 1 and 3
 
+OS, AIML, DBMS:
+Unit 1 to 3
+
 
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Syllabus.md",
+                "file": "Notes/DBMS/DBMS Experiment 5.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Syllabus.md",
+                "file": "Notes/DBMS/DBMS Experiment 5.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Syllabus.md",
+                "file": "Notes/DBMS/DBMS Experiment 5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Syllabus.md"
+                "file": "Notes/DBMS/DBMS Experiment 5.md"
               }
             }
           }
@@ -146,26 +146,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e24522aa481af8de",
+  "active": "0fb9ed8e4c4cdc09",
   "lastOpenFiles": [
-    "Notes/Untitled.md",
+    "Notes/DBMS/DBMS Experiment 9.md",
+    "Notes/DBMS/DBMS Experiment 8.md",
+    "Notes/DBMS/DBMS Experiment 5.md",
+    "Notes/DBMS/Pasted image 20241008214742.png",
+    "contact.md",
+    "DAA 10_1_2024.md",
+    "AIML 23 August.md",
     "Notes/Syllabus.md",
-    "Notes/Maths",
+    "Notes/Maths/3577193.3593728.pdf",
+    "Notes/Maths/sensors-23-06214.pdf",
+    "Notes/Maths/A_Fast_Percolation-Dijkstra_SPF_Method_for_Mega-Constellation_Satellite_Network_Routing.pdf",
+    "Notes/Maths/How_Good_is_Neural_Combinatorial_Optimization_A_Systematic_Evaluation_on_the_Traveling_Salesman_Problem.pdf",
+    "Notes/Maths/1-s2.0-S0968090X22003941-main.pdf",
+    "Notes/Maths/Discrete Mathematical Structures_CSEG2006_B.Tech. SOCS.pdf",
+    "Notes/Maths/PCNF and PDNF.pdf",
+    "Notes/Maths/Practice Set_Unit 3_DMS.pdf",
+    "Notes/Maths/Practice Set_Unit 1_DMS_CSEG2006.pdf",
+    "Notes/AIML/Syllabus Elements of AIML.pdf",
+    "Notes/Untitled.md",
     "Notes/DAA/Assignment 1.md",
-    "Pasted image 20241008214742.png",
-    "Pasted image 20241008214227.png",
-    "Notes/DAA/Assignment1 Q5.cpp",
-    "Pasted image 20241008213715.png",
-    "Pasted image 20241008213705.png",
-    "Pasted image 20241008175738.png",
-    "Notes/Assignment1 Q5.cpp",
-    "Pasted image 20241008175324.png",
-    "Pasted image 20241008175321.png",
-    "Pasted image 20241008175314.png",
-    "Notes/DAA/Assignment1 Q3.cpp",
-    "Pasted image 20241008174627.png",
+    "Notes/DBMS/Pasted image 20241008214227.png",
+    "Notes/DBMS/Pasted image 20241008213715.png",
+    "Notes/DBMS/Pasted image 20241008213705.png",
+    "Notes/DBMS/Pasted image 20241008175738.png",
+    "Notes/DBMS/Pasted image 20241008175324.png",
+    "Notes/DBMS/Pasted image 20241008175321.png",
+    "Notes/DBMS/Pasted image 20241008175314.png",
+    "Notes/DBMS/Pasted image 20241008174627.png",
     "Notes/DBMS/test.md",
-    "Notes/DBMS/SS3.jpg",
-    "DAA 10_1_2024.md"
+    "Notes/DBMS/SS3.jpg"
   ]
 }
