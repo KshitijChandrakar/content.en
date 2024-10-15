@@ -18,6 +18,16 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e6953f7a96bfa588",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Notes/Maths/23 24 Class test.pdf"
+              }
+            }
           }
         ]
       }
@@ -148,24 +158,28 @@
   },
   "active": "0fb9ed8e4c4cdc09",
   "lastOpenFiles": [
-    "Pasted image 20241011193042.png",
-    "Notes/Maths/practice sheet graph theoey.pdf",
+    "Notes/AIML/Syllabus Elements of AIML.pdf",
+    "Notes/AIML/Unit 1-L3.pdf",
+    "Notes/AIML/Unit_2_Logical_AI.pdf",
+    "Notes/AIML/Unit3_Machine_Learning_and_Dataset_Handling_Presentation.pdf",
+    "Notes/AIML/Unit 1-L4 pdf.pdf",
+    "Notes/AIML/Unit 1-L1.pdf",
+    "Notes/AIML/Syllabus.md",
     "Notes/Maths/Syllabus.md",
+    "Notes/Maths/23 24 Class test.pdf",
+    "Notes/Maths/41 42 CLASS TEST.pdf",
+    "Notes/Maths/51 52 53 54 CLASS TEST.pdf",
     "Notes/Maths/Logical Identifying Boobs.md",
-    "Notes/Maths/PCNF and PDNF.pdf",
-    "Notes/OS/Operating System_Syllabus.pdf",
-    "Notes/OS/Unit_1_Operating_Systems_Notes.pdf",
-    "Notes/OS/lu207441l9v77.tmp",
-    "Notes/OS/Operating System_Syllabus.docx",
+    "Notes/Maths/Set Identities.md",
+    "Notes/Maths/Class retest.pdf",
+    "Notes/Maths/How_Good_is_Neural_Combinatorial_Optimization_A_Systematic_Evaluation_on_the_Traveling_Salesman_Problem.pdf",
+    "Notes/Maths/Hamiltonian and Eulerian Graphs.md",
+    "Pasted image 20241011193042.png",
     "Notes/_index.md",
-    "Notes/OS/Kshitij_500124827.pdf",
-    "Notes/OS/lu196241kux5j.tmp",
     "Notes/DBMS/Syllabus.md",
-    "Notes/OS/Hardik-saxena_500120776-OS.pdf",
     "Notes/DBMS/Notes/22 August 2024.md",
     "Notes/DBMS/Notes/28 August.md",
     "Notes/DBMS/Notes/August 14 2024.md",
-    "Notes/DBMS/Notes",
     "Notes/DBMS/Notes/August 21 2024.md",
     "Notes/DBMS/Experiments/DBMS Experiment 4.md",
     "Notes/DBMS/test.md",
@@ -177,7 +191,6 @@
     "Rational Agents.md",
     "AIML 23 August.md",
     "Notes/DAA/Syllabus.md",
-    "Notes/AIML/Syllabus.md",
     "Notes/DBMS/Experiments/Pasted image 20241008214742.png",
     "Notes/DBMS/_index.md",
     "posts/On Servers.md",
@@ -185,14 +198,11 @@
     "Notes/DBMS/Experiments/DBMS Experiment 9.md",
     "Notes/DBMS/Experiments/DBMS Experiment 8.md",
     "DAA 10_1_2024.md",
-    "Notes/Syllabus.md",
-    "Notes/Untitled.md",
     "Notes/DBMS/Experiments/Pasted image 20241008214227.png",
     "Notes/DBMS/Experiments/Pasted image 20241008213715.png",
     "Notes/DBMS/Experiments/Pasted image 20241008213705.png",
     "Notes/DBMS/Experiments/Pasted image 20241008175738.png",
     "Notes/DBMS/Experiments/Pasted image 20241008175324.png",
-    "Notes/DBMS/Experiments/Pasted image 20241008175321.png",
-    "Notes/DBMS/Experiments/Pasted image 20241008175314.png"
+    "Notes/DBMS/Experiments/Pasted image 20241008175321.png"
   ]
 }
