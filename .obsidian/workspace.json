@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0fb9ed8e4c4cdc09",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Maths/Logical Identifying Boobs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e6953f7a96bfa588",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Notes/Maths/23 24 Class test.pdf"
+                "file": "Notes/AIML/Unit 1-L4 pdf.pdf"
               }
             }
           }
@@ -95,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Maths/Logical Identifying Boobs.md",
+                "file": "Notes/AIML/Unit 1-L4 pdf.pdf",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Maths/Logical Identifying Boobs.md",
+                "file": "Notes/AIML/Unit 1-L4 pdf.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Maths/Logical Identifying Boobs.md"
+                "file": "Notes/AIML/Unit 1-L4 pdf.pdf"
               }
             }
           }
@@ -156,25 +144,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0fb9ed8e4c4cdc09",
+  "active": "e6953f7a96bfa588",
   "lastOpenFiles": [
-    "Notes/AIML/Syllabus Elements of AIML.pdf",
-    "Notes/AIML/Unit 1-L3.pdf",
     "Notes/AIML/Unit_2_Logical_AI.pdf",
     "Notes/AIML/Unit3_Machine_Learning_and_Dataset_Handling_Presentation.pdf",
-    "Notes/AIML/Unit 1-L4 pdf.pdf",
-    "Notes/AIML/Unit 1-L1.pdf",
+    "Academic Calender.pdf",
+    "Notes/AIML/Syllabus Elements of AIML.pdf",
     "Notes/AIML/Syllabus.md",
-    "Notes/Maths/Syllabus.md",
+    "Notes/AIML/Unit 1-L1.pdf",
+    "Notes/Maths/Logical Identifying Boobs.md",
+    "'Pasted.md",
     "Notes/Maths/23 24 Class test.pdf",
+    "Notes/Maths/Pasted image 20241011193042.png",
+    "Notes/Maths/_index.md",
+    "Notes/AIML/Unit 1-L3.pdf",
+    "Notes/AIML/Unit 1-L4 pdf.pdf",
+    "Notes/Maths/Syllabus.md",
     "Notes/Maths/41 42 CLASS TEST.pdf",
     "Notes/Maths/51 52 53 54 CLASS TEST.pdf",
-    "Notes/Maths/Logical Identifying Boobs.md",
     "Notes/Maths/Set Identities.md",
     "Notes/Maths/Class retest.pdf",
-    "Notes/Maths/How_Good_is_Neural_Combinatorial_Optimization_A_Systematic_Evaluation_on_the_Traveling_Salesman_Problem.pdf",
     "Notes/Maths/Hamiltonian and Eulerian Graphs.md",
-    "Pasted image 20241011193042.png",
     "Notes/_index.md",
     "Notes/DBMS/Syllabus.md",
     "Notes/DBMS/Notes/22 August 2024.md",
@@ -196,8 +186,6 @@
     "posts/On Servers.md",
     "Notes/DBMS/Experiments/DBMS Experiment 5.md",
     "Notes/DBMS/Experiments/DBMS Experiment 9.md",
-    "Notes/DBMS/Experiments/DBMS Experiment 8.md",
-    "DAA 10_1_2024.md",
     "Notes/DBMS/Experiments/Pasted image 20241008214227.png",
     "Notes/DBMS/Experiments/Pasted image 20241008213715.png",
     "Notes/DBMS/Experiments/Pasted image 20241008213705.png",

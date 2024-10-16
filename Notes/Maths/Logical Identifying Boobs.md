@@ -3,16 +3,13 @@ Logical identities (also known as **laws of logic**) are standard equivalences o
 ### 1. **Basic Identities**
 
 - **Identity Law:**
-  $$( P \land \text{True} \equiv P )
-  $$( P \lor \text{False} \equiv P )
+  $$( P \land \text{True} \equiv P )$$$$( P \lor \text{False} \equiv P ) $$
 
 - **Domination Law (Annihilation Law):**
-  $$( P \land \text{False} \equiv \text{False} )
-  $$( P \lor \text{True} \equiv \text{True} )
+  $$( P \land \text{False} \equiv \text{False} )$$$$ ( P \lor \text{True} \equiv \text{True} ) $$
 
 - **Idempotent Law:**
-  $$( P \land P \equiv P )
-  $$( P \lor P \equiv P )
+  $$( P \land P \equiv P )$$$$ ( P \lor P \equiv P ) $$
 
 ### 2. **Negation Laws**
 
@@ -83,15 +80,17 @@ $$( P \implies Q \equiv \neg Q \implies \neg P )$$
 
 These deal with the combination of a variable and its negation:
 
--  ( P \lor \neg P \equiv \text{True} )
--  ( P \land \neg P \equiv \text{False} )
+$$ ( P \lor \neg P \equiv \text{True} ) $$
+$$ ( P \land \neg P \equiv \text{False} ) $$
 
 ### 12. **Exclusive Or (XOR) Laws**
 
--  ( P \oplus Q \equiv (P \lor Q) \land \neg(P \land Q) )
--  ( P \oplus P \equiv \text{False} )  (XOR is false when both inputs are the same)
+$$ ( P \oplus Q \equiv (P \lor Q) \land \neg(P \land Q) )$$$$ ( P \oplus P \equiv \text{False} )$$
+  (XOR is false when both inputs are the same)
   
 ---
 
 ### Truth Table for implication
+
 ![[Pasted image 20241011193042.png]]
+
