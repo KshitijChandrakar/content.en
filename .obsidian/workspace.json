@@ -8,13 +8,29 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e6953f7a96bfa588",
+            "id": "8ad7686f1c041f03",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Notes/OS/OneDrive_1_8-5-2024/Unit 1_Dr. Hemant Petwal/Unit 1_L2.pdf"
-              }
+                "file": "Notes/DBMS/Experiments/Experiment 12.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Experiment 12"
+            }
+          },
+          {
+            "id": "ce4c49ce474656b9",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.6"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.6"
             }
           }
         ]
@@ -37,7 +53,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -52,7 +70,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -60,7 +80,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -83,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/OS/OneDrive_1_8-5-2024/Unit 1_Dr. Hemant Petwal/Unit 1_L2.pdf",
+                "file": "Notes/DBMS/Experiments/Experiment 10.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -91,7 +113,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Experiment 10"
             }
           },
           {
@@ -100,10 +124,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/OS/OneDrive_1_8-5-2024/Unit 1_Dr. Hemant Petwal/Unit 1_L2.pdf",
+                "file": "Notes/DBMS/Experiments/Experiment 10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Experiment 10"
             }
           },
           {
@@ -114,7 +140,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -123,8 +151,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/OS/OneDrive_1_8-5-2024/Unit 1_Dr. Hemant Petwal/Unit 1_L2.pdf"
-              }
+                "file": "Notes/DBMS/Experiments/Experiment 12.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Experiment 12"
             }
           }
         ],
@@ -144,53 +174,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e6953f7a96bfa588",
+  "active": "8ad7686f1c041f03",
   "lastOpenFiles": [
-    "Notes/OS/OneDrive_1_8-5-2024/Unit 1_Dr. Hemant Petwal/Unit 1_L1.pdf",
-    "Notes/OS/OS_IPC_Process_SynchronizationUpdated[1].pdf",
-    "Notes/OS/lu149685itlwq.tmp",
-    "Notes/OS/Unit_2_Operating_Systems_Notes.pdf",
-    "Notes/OS/U3_IPC_Synchronization_Tools[1].pdf",
-    "Notes/OS/lu149685itlwn.tmp",
-    "Notes/OS/OneDrive_1_8-5-2024/Unit 1_Dr. Hemant Petwal/Unit 1_L3.pdf",
-    "Notes/OS/OneDrive_1_8-5-2024/Unit 1_Dr. Hemant Petwal/lu126405ir5s5.tmp",
-    "Notes/OS/OneDrive_1_8-5-2024/Unit 1_Dr. Hemant Petwal/Unit 1_L5.pdf",
-    "Notes/OS/OneDrive_1_8-5-2024/Unit 1_Dr. Hemant Petwal/lu126405ir5s2.tmp",
-    "Notes/OS/OneDrive_1_8-5-2024/Unit 1_Dr. Hemant Petwal/Unit 1_L2.pdf",
-    "Notes/OS/WhatsApp Image 2024-10-16 at 23.33.46_b78731a7.jpg",
-    "Notes/OS/WhatsApp Image 2024-10-16 at 23.33.46_5b2e5316.jpg",
-    "Notes/OS/WhatsApp Image 2024-10-16 at 23.33.45_3efd5698.jpg",
-    "Notes/OS/WhatsApp Image 2024-10-16 at 23.33.45_dc106d10.jpg",
+    "Pasted image 20241113203504.png",
+    "Pasted image 20241113203327.png",
+    "Pasted image 20241113202807.png",
+    "Pasted image 20241113202628.png",
+    "Pasted image 20241113202432.png",
+    "Pasted image 20241113202218.png",
+    "Notes/DBMS/Experiments/Experiment 11.md",
+    "Pasted image 20241113153959.png",
+    "Pasted image 20241113153741.png",
+    "Pasted image 20241113153544.png",
+    "Pasted image 20241113153425.png",
+    "Notes/DBMS/Experiments/Experiment 12.md",
+    "Notes/DBMS/Experiments/Untitled",
+    "posts/Anthropocene Mug.md",
+    "posts/Internships.md",
+    "Authoring/The Olive Green Book/Untitled 1.md",
+    "Authoring/The Olive Green Book/I Think Therefore I Bleed.md",
+    "Authoring/The Olive Green Book/Lights.md",
+    "Authoring/The Olive Green Book/Untitled.md",
+    "Untitled.md",
+    "Notes/Maths/Kissing Numbers/Kissing Numbers.md",
+    "Authoring/The Olive Green Book",
+    "T",
+    "Untitled",
+    "Authoring",
+    "Notes/Maths/Kissing Numbers/Pasted image 20241021124637.png",
+    "Notes/Maths/Gerrymandering/Untitled.md",
+    "Notes/Maths/_index.md",
+    "Notes/DBMS/Experiments/Experiment 10.md",
+    "Notes/DBMS/Experiments/DBMS Experiment 9.md",
+    "Notes/DBMS/_index.md",
+    "Notes/Maths/Gerrymandering",
+    "Notes/Maths/Kissing Numbers",
+    "Notes/OS/Question Bank for practice Only.pdf",
+    "Notes/OS/OneDrive_1_8-5-2024/Unit 3_Mr. Deepak and Dr. Abhijit/Unit 3 Mr Deepak and Dr Abhijit.pdf",
+    "Notes/OS/Operating System_Syllabus.pdf",
     "Notes/Syllabus.md",
     "Notes/AIML/Syllabus.md",
     "Notes/Maths/Logical Identifying Boobs.md",
     "'Pasted.md",
-    "Notes/Maths/Pasted image 20241011193042.png",
-    "Notes/Maths/_index.md",
     "Notes/Maths/Syllabus.md",
     "Notes/Maths/Set Identities.md",
     "Notes/Maths/Hamiltonian and Eulerian Graphs.md",
     "Notes/_index.md",
     "Notes/DBMS/Syllabus.md",
-    "Notes/DBMS/Notes/22 August 2024.md",
-    "Notes/DBMS/Notes/28 August.md",
-    "Notes/DBMS/Notes/August 14 2024.md",
-    "Notes/DBMS/Notes/August 21 2024.md",
-    "Notes/DBMS/Experiments/DBMS Experiment 4.md",
-    "Notes/DBMS/test.md",
-    "Notes/DBMS/SS1.jpg",
-    "Notes/DBMS/SS0.jpg",
-    "contact.md",
-    "posts/Internships.md",
-    "Untitled.md",
-    "Rational Agents.md",
-    "AIML 23 August.md",
-    "Notes/DAA/Syllabus.md",
-    "Notes/DBMS/Experiments/Pasted image 20241008214742.png",
-    "Notes/DBMS/_index.md",
-    "posts/On Servers.md",
-    "Notes/DBMS/Experiments/DBMS Experiment 5.md",
-    "Notes/DBMS/Experiments/Pasted image 20241008214227.png",
-    "Notes/DBMS/Experiments/Pasted image 20241008213715.png"
+    "Notes/DBMS/Notes/22 August 2024.md"
   ]
 }
