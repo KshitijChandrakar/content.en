@@ -16,3 +16,6 @@ MotionBeats mailto:contact@motionbeats.studio
 
 - MotionBeats mailto:contact@motionbeats.studio
 - AugmentedByte https://www.augmentedbyte.com/ 
+## Cool but not eligible
+- DIYCAM: https://www.linkedin.com/company/diycam/
+- PUPILMESH: https://www.linkedin.com/company/pupilmesh/
