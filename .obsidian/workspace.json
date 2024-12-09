@@ -11,10 +11,12 @@
             "id": "be47365f4e497135",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "pdf",
+              "state": {
+                "file": "Notes/DBMS/Theory Syllabus (LMS).pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Theory Syllabus (LMS)"
             }
           }
         ]
@@ -161,8 +163,8 @@
   },
   "active": "be47365f4e497135",
   "lastOpenFiles": [
-    "Untitled 1.md",
     "Untitled.md",
+    "Untitled 1.md",
     "Notes/DBMS/Theory Syllabus (LMS).pdf",
     "Notes/DBMS/Prev Year QP/ESE_DEC2020_SOCS_B TECH CSE AI&ML_SEM III_CSEG2017_ADVANCED DATABASE MANAGEMENT SYSTEMS.pdf",
     "Notes/DBMS/Prev Year QP/B.Tech.-CSE with all specialization-III-Advanced Database Management Systems.pdf",
