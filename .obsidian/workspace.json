@@ -11,12 +11,10 @@
             "id": "be47365f4e497135",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Notes/DBMS/Theory Syllabus (LMS).pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Theory Syllabus (LMS)"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -161,8 +159,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e24522aa481af8de",
+  "active": "be47365f4e497135",
   "lastOpenFiles": [
+    "Untitled 1.md",
+    "Untitled.md",
+    "Notes/DBMS/Theory Syllabus (LMS).pdf",
     "Notes/DBMS/Prev Year QP/ESE_DEC2020_SOCS_B TECH CSE AI&ML_SEM III_CSEG2017_ADVANCED DATABASE MANAGEMENT SYSTEMS.pdf",
     "Notes/DBMS/Prev Year QP/B.Tech.-CSE with all specialization-III-Advanced Database Management Systems.pdf",
     "Notes/DBMS/Prev Year QP/B TECH(CSE+ALL)_IV_ AdvancedDatabaseManagementSystems.pdf",
@@ -171,7 +172,6 @@
     "Untitled.canvas",
     "Notes/DAA/DAA_ Syllabus Th+Lab.pdf",
     "2024-12-09.md",
-    "Notes/DBMS/Theory Syllabus (LMS).pdf",
     "Notes/DBMS/Prev Year QP/SET-01_SOCS_ESE-DEC23__B.Tech (CSE-H+NH)-All Spec._7_CSBI4011P_Banking & Insurance Technology - Application Architecture, Database & Structures.pdf",
     "Notes/DBMS/Prev Year QP/SET-01_SOCS_ESE-MAY23_B.Tech (CSE)+All Spec._IV_CSEG2005_Advanced Database Management Systems.pdf",
     "Notes/DBMS/Prev Year QP/Set01_ESE_MAY24_SOCS_B TECH(CSE-All)_IV_CSEG2005_Advanced Database Management Systems.pdf",
@@ -193,7 +193,6 @@
     "Notes/AIML/Syllabus.md",
     "Notes/DAA/Syllabus.md",
     "Notes/Maths/Logical Identifying Boobs.md",
-    "Untitled 1.md",
     "Notes/Maths/Syllabus.md",
     "Notes/DBMS/Experiments/Experiment 13.md",
     "Notes/DBMS/Experiments/Experiment 14.md",
@@ -205,7 +204,6 @@
     "Authoring/The Olive Green Book/I Think Therefore I Bleed.md",
     "Authoring/The Olive Green Book/Lights.md",
     "Authoring/The Olive Green Book/Untitled.md",
-    "Untitled.md",
     "Notes/Maths/Kissing Numbers/Kissing Numbers.md",
     "Notes/Maths/Gerrymandering/Untitled.md",
     "Notes/Maths/_index.md"
