@@ -1,0 +1,32 @@
+1. WAP to access class vanablc using object.
+2. WAP to access class members using the class object
+3. WAP to differentiate between class and c*'ject variables
+4. WAP to modifying a mutable type attnbute.
+5. WAP to illustrate the difference public and Nivate variables
+6. WAP to illustrate the use of a private method.
+7. WAP to call a class method from another method of thc same class.
+8. WAP to show how a class method calls a function defined in the global namespace.
+9. WAP to vanablcs to a class at run-time.
+10. WAP that uses class to store the name and marks of students. Use list to store thc marks in the threesubjects.
+11. WAP With class Employee that keeps a track of the number of employees in an organization and also storetheir name. designation. and sal.ao• details.
+12. WAP that has a class Ftson storing and DOB of a person- rrograrn should subtract DOB from today's date to find out whether a Frson is eligiblc to v€gc or not-
+13. WAP that has a class Circle. Use a class variable to define the value of constant Pl. Use this class variable area and circumference of a circle with 5Fcitied radius.
+14. WAP that has a clxss student that stores roll number, name. and marks (in three subjects) of the students. Display the information (roll number, name, and total marks) stores about the student-
+15. WAP a class Rectangle that Ins attributes length and breath and a method area which returns the area of the rectangle.
+16. WAP that has a class fraction with attributes numerator and denominator. Enter the values of the attributes and print the fraction in simplified from.
+17. WAP that has a class numbers with values stored in the list. Write a class method to find the largest salue.
+18. Write a class that store a string and all its status details such as number of uppercase character. vowel. consonants, spxes. etc.
+19. WAP to deposit or withdraw in a bank account-
+20. Create a class of student (name, sap id, marks[phy.chem.maths] Create 3 objects by taking inputs from the user and display details of all students.
+21. Add constructor in thc above class to initialize studcnt dctails of n students and implement following new methods:
+Display( ) student details
+Find Marks_percentagc( ) of each student
+Display result() (Note: if marks in each subject than pass else Faill
+Write a Function to find averagc of the class
+22. Create programs to implement different types of inheritances.
+23. Create a class to implement method Overriding.
+24. Create a class for operator overloading which adds two Point Objects where Point has x & y values
+e.g. if
+P1(x=10,y=20)
+p2(x=12,y=15)
+p3=p1+p2=(x=22,y=35)

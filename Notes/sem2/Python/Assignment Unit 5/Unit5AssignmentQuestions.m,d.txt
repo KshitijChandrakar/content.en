@@ -1,0 +1,459 @@
+Sure, let's tackle each of these tasks one by one in Python:
+
+1. Access class variable using object:
+
+```python
+class MyClass:
+	class_variable = "I am a class variable"
+
+obj = MyClass()
+print(obj.class_variable)
+```
+
+2. Access class members using the class object:
+
+```python
+class MyClass:
+	def __init__(self):
+    	self.instance_variable = "I am an instance variable"
+
+print(MyClass().instance_variable)
+```
+
+3. Differentiate between class and object variables:
+
+```python
+class MyClass:
+	class_variable = "I am a class variable"
+
+	def __init__(self):
+    	self.instance_variable = "I am an instance variable"
+
+print(MyClass.class_variable)  # Accessing class variable
+print(MyClass().instance_variable)  # Accessing instance variable
+```
+
+4. Modifying a mutable type attribute:
+
+```python
+class MyClass:
+	mutable_list = []
+
+obj1 = MyClass()
+obj2 = MyClass()
+
+obj1.mutable_list.append(1)
+print(obj2.mutable_list)  # Output: [1]
+```
+
+5. Illustrate the difference between public and private variables:
+
+```python
+class MyClass:
+	public_variable = "I am public"
+	__private_variable = "I am private"
+
+print(MyClass.public_variable)
+# print(MyClass.__private_variable)  # This will raise an error
+```
+
+6. Illustrate the use of a private method:
+
+```python
+class MyClass:
+	def __private_method(self):
+    	print("This is a private method")
+
+	def public_method(self):
+    	self.__private_method()
+
+obj = MyClass()
+obj.public_method()  # Output: This is a private method
+# obj.__private_method()  # This will raise an error
+```
+7. Call a class method from another method of the same class:
+
+```python
+class MyClass:
+	@classmethod
+	def class_method(cls):
+    	print("This is a class method")
+
+	def another_method(self):
+    	self.class_method()
+
+obj = MyClass()
+obj.another_method()  # Output: This is a class method
+```
+
+8. Show how a class method calls a function defined in the global namespace:
+
+```python
+def global_function():
+	print("This is a function in the global namespace")
+
+class MyClass:
+	@classmethod
+	def class_method(cls):
+    	global_function()
+
+MyClass.class_method()  # Output: This is a function in the global namespace
+```
+
+9. Add variables to a class at runtime:
+
+```python
+class MyClass:
+	pass
+
+MyClass.new_variable = "This is a new variable"
+print(MyClass.new_variable)  # Output: This is a new variable
+```
+
+10. Use a class to store the name and marks of students, using lists to store the marks in three subjects:
+
+```python
+class Student:
+	def __init__(self, name, marks):
+    	self.name = name
+    	self.marks = marks
+
+student1 = Student("Alice", [90, 85, 88])
+print(student1.name)
+print(student1.marks)  # Output: [90, 85, 88]
+```
+11. Create a class `Employee` to keep track of the number of employees in an organization and store their name, designation, and salary details:
+
+```python
+class Employee:
+	num_employees = 0
+
+	def __init__(self, name, designation, salary):
+    	self.name = name
+    	self.designation = designation
+    	self.salary = salary
+    	Employee.num_employees += 1
+
+# Example usage:
+emp1 = Employee("John", "Manager", 50000)
+emp2 = Employee("Alice", "Developer", 60000)
+print(Employee.num_employees)  # Output: 2
+```
+
+12. Create a class `Person` to store the date of birth (DOB) of a person and check if they are eligible to vote:
+
+```python
+from datetime import datetime
+
+class Person:
+	def __init__(self, name, dob):
+    	self.name = name
+    	self.dob = datetime.strptime(dob, "%Y-%m-%d").date()
+
+	def is_eligible_to_vote(self):
+    	today = datetime.now().date()
+    	age = today.year - self.dob.year - ((today.month, today.day) < (self.dob.month, self.dob.day))
+    	return age >= 18
+
+# Example usage:
+person1 = Person("Alice", "2000-01-01")
+print(person1.is_eligible_to_vote())  # Output: True if current date is after 2000-01-01 + 18 years
+```
+
+13. Create a class `Circle` to calculate the area and circumference of a circle with a specified radius:
+
+```python
+class Circle:
+	pi = 3.14159
+
+	def __init__(self, radius):
+    	self.radius = radius
+
+	def calculate_area(self):
+    	return Circle.pi * (self.radius ** 2)
+
+	def calculate_circumference(self):
+    	return 2 * Circle.pi * self.radius
+
+# Example usage:
+circle1 = Circle(5)
+print(circle1.calculate_area())  # Output: Area of circle with radius 5
+print(circle1.calculate_circumference())  # Output: Circumference of circle with radius 5
+```
+
+14. Create a class `Student` to store roll number, name, and marks in three subjects, and display information about the student:
+
+```python
+class Student:
+	def __init__(self, roll_number, name, marks):
+    	self.roll_number = roll_number
+    	self.name = name
+    	self.marks = marks
+
+	def display_info(self):
+    	print(f"Roll Number: {self.roll_number}")
+    	print(f"Name: {self.name}")
+    	print(f"Total Marks: {sum(self.marks)}")
+
+# Example usage:
+student1 = Student(1, "Alice", [85, 90, 88])
+student1.display_info()  # Output: Information about student1
+```
+15. Create a class `Rectangle` with attributes length and breadth and a method `calculate_area` which returns the area of the rectangle:
+
+```python
+class Rectangle:
+	def __init__(self, length, breadth):
+    	self.length = length
+    	self.breadth = breadth
+
+	def calculate_area(self):
+    	return self.length * self.breadth
+
+# Example usage:
+rect = Rectangle(5, 4)
+print(rect.calculate_area())  # Output: Area of rectangle with length 5 and breadth 4
+```
+
+16. Create a class `Fraction` with attributes numerator and denominator, and print the fraction in simplified form:
+
+```python
+class Fraction:
+	def __init__(self, numerator, denominator):
+    	self.numerator = numerator
+    	self.denominator = denominator
+
+	def simplify(self):
+    	gcd = self.gcd(self.numerator, self.denominator)
+    	simplified_numerator = self.numerator // gcd
+    	simplified_denominator = self.denominator // gcd
+    	return f"{simplified_numerator}/{simplified_denominator}"
+
+	@staticmethod
+	def gcd(a, b):
+    	while b:
+        	a, b = b, a % b
+    	return a
+
+# Example usage:
+frac = Fraction(6, 8)
+print(frac.simplify())  # Output: 3/4
+```
+
+17. Create a class `Numbers` with values stored in a list. Write a class method to find the largest value:
+
+```python
+class Numbers:
+	def __init__(self, values):
+    	self.values = values
+
+	@classmethod
+	def find_largest(cls, values):
+    	return max(values)
+
+# Example usage:
+num_list = [10, 25, 7, 15]
+print(Numbers.find_largest(num_list))  # Output: 25
+```
+
+18. Create a class to store a string and its statistics such as the number of uppercase characters, vowels, consonants, spaces, etc.
+
+```python
+class StringStatistics:
+	def __init__(self, input_string):
+    	self.input_string = input_string
+
+	def count_uppercase(self):
+    	return sum(1 for char in self.input_string if char.isupper())
+
+	def count_vowels(self):
+    	vowels = "aeiouAEIOU"
+    	return sum(1 for char in self.input_string if char in vowels)
+
+	def count_consonants(self):
+    	consonants = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ"
+    	return sum(1 for char in self.input_string if char in consonants)
+
+	def count_spaces(self):
+    	return sum(1 for char in self.input_string if char.isspace())
+
+# Example usage:
+text = "Hello World"
+stats = StringStatistics(text)
+print(stats.count_uppercase())  # Output: 2
+print(stats.count_vowels()) 	# Output: 3
+print(stats.count_consonants()) # Output: 7
+print(stats.count_spaces()) 	# Output: 1
+```
+19. Create a class `BankAccount` to deposit or withdraw money:
+
+```python
+class BankAccount:
+	def __init__(self, balance=0):
+    	self.balance = balance
+
+	def deposit(self, amount):
+    	self.balance += amount
+    	print(f"Deposit of ${amount} accepted. Current balance: ${self.balance}")
+
+	def withdraw(self, amount):
+    	if amount > self.balance:
+        	print("Insufficient funds!")
+    	else:
+        	self.balance -= amount
+        	print(f"Withdrawal of ${amount} successful. Current balance: ${self.balance}")
+
+# Example usage:
+account = BankAccount(1000)
+account.deposit(500)   # Output: Deposit of $500 accepted. Current balance: $1500
+account.withdraw(2000) # Output: Insufficient funds!
+account.withdraw(700)  # Output: Withdrawal of $700 successful. Current balance: $800
+```
+Got it! Let's address each question individually then.
+
+20. Create a class `Student` with attributes: name, SAP ID, and marks in three subjects (physics, chemistry, mathematics). Create 3 objects by taking inputs from the user and display details of all students.
+
+```python
+class Student:
+	def __init__(self, name, sap_id, phy_marks, chem_marks, math_marks):
+    	self.name = name
+    	self.sap_id = sap_id
+    	self.phy_marks = phy_marks
+    	self.chem_marks = chem_marks
+    	self.math_marks = math_marks
+
+# Create 3 student objects
+students = []
+for _ in range(3):
+	name = input("Enter student name: ")
+	sap_id = input("Enter SAP ID: ")
+	phy_marks = int(input("Enter Physics marks: "))
+	chem_marks = int(input("Enter Chemistry marks: "))
+	math_marks = int(input("Enter Mathematics marks: "))
+	students.append(Student(name, sap_id, phy_marks, chem_marks, math_marks))
+
+# Display details of all students
+for student in students:
+	print("\nName:", student.name)
+	print("SAP ID:", student.sap_id)
+	print("Physics Marks:", student.phy_marks)
+	print("Chemistry Marks:", student.chem_marks)
+	print("Mathematics Marks:", student.math_marks)
+```
+
+21. Write a function to find the average marks of the class.
+
+```python
+def calculate_class_average(students):
+	total_physics = 0
+	total_chemistry = 0
+	total_mathematics = 0
+	total_students = len(students)
+
+	for student in students:
+    	total_physics += student.phy_marks
+    	total_chemistry += student.chem_marks
+    	total_mathematics += student.math_marks
+
+	avg_physics = total_physics / total_students
+	avg_chemistry = total_chemistry / total_students
+	avg_mathematics = total_mathematics / total_students
+
+	return avg_physics, avg_chemistry, avg_mathematics
+
+# Example usage:
+avg_phy, avg_chem, avg_math = calculate_class_average(students)
+print("Average Physics Marks:", avg_phy)
+print("Average Chemistry Marks:", avg_chem)
+print("Average Mathematics Marks:", avg_math)
+```
+Sure, let's continue with the remaining questions:
+
+22. Create programs to implement different types of inheritances.
+
+```python
+# Single Inheritance
+class Parent:
+	def show_parent(self):
+    	print("Parent class method")
+
+class Child(Parent):
+	def show_child(self):
+    	print("Child class method")
+
+# Multiple Inheritance
+class Parent1:
+	def show_parent1(self):
+    	print("Parent1 class method")
+
+class Parent2:
+	def show_parent2(self):
+    	print("Parent2 class method")
+
+class Child(Parent1, Parent2):
+	def show_child(self):
+    	print("Child class method")
+
+# Multilevel Inheritance
+class Grandparent:
+	def show_grandparent(self):
+    	print("Grandparent class method")
+
+class Parent(Grandparent):
+	def show_parent(self):
+    	print("Parent class method")
+
+class Child(Parent):
+	def show_child(self):
+    	print("Child class method")
+
+# Hierarchical Inheritance
+class Parent:
+	def show_parent(self):
+    	print("Parent class method")
+
+class Child1(Parent):
+	def show_child1(self):
+    	print("Child1 class method")
+
+class Child2(Parent):
+	def show_child2(self):
+    	print("Child2 class method")
+```
+
+23. Create a class to implement method Overriding.
+
+```python
+class Parent:
+	def show(self):
+    	print("Parent class method")
+
+class Child(Parent):
+	def show(self):
+    	print("Child class method overriding Parent class method")
+```
+
+24. Create a class for operator overloading which adds two Point Objects where Point has x & y values.
+
+```python
+class Point:
+	def __init__(self, x, y):
+    	self.x = x
+    	self.y = y
+
+	def __add__(self, other):
+    	if isinstance(other, Point):
+        	return Point(self.x + other.x, self.y + other.y)
+    	else:
+        	raise TypeError("Unsupported operand type(s) for +: '{}' and '{}'".format(type(self), type(other)))
+
+	def __str__(self):
+    	return "Point(x={}, y={})".format(self.x, self.y)
+
+# Example usage:
+p1 = Point(10, 20)
+p2 = Point(12, 15)
+p3 = p1 + p2
+print(p3)  # Output: Point(x=22, y=35)
+```
+
