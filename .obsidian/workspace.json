@@ -13,13 +13,26 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Notes/DBMS/Theory Syllabus (LMS).pdf"
+                "file": "Notes/DBMS/Prev Year QP/Set01_ESE_MAY24_SOCS_B TECH(CSE-All)_IV_CSEG2005_Advanced Database Management Systems.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Theory Syllabus (LMS)"
+              "title": "Set01_ESE_MAY24_SOCS_B TECH(CSE-All)_IV_CSEG2005_Advanced Database Management Systems"
+            }
+          },
+          {
+            "id": "cab43f55d4462a70",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Notes/OS/Operating System_Syllabus.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Operating System_Syllabus"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -161,23 +174,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "be47365f4e497135",
+  "active": "cab43f55d4462a70",
   "lastOpenFiles": [
-    "Untitled.md",
-    "Untitled 1.md",
+    "Notes/OS/UNIT-5.pptx",
+    "Notes/OS/UNIT-5.zip",
+    "Notes/OS/Unit_6.pptx",
+    "Notes/OS/UNIT-51.pptx",
+    "Notes/OS/Deadlock.ppt",
+    "Notes/OS/Case Study.pdf",
     "Notes/DBMS/Theory Syllabus (LMS).pdf",
-    "Notes/DBMS/Prev Year QP/ESE_DEC2020_SOCS_B TECH CSE AI&ML_SEM III_CSEG2017_ADVANCED DATABASE MANAGEMENT SYSTEMS.pdf",
+    "Notes/DBMS/Prev Year QP/Set01_ESE_MAY24_SOCS_B TECH(CSE-All)_IV_CSEG2005_Advanced Database Management Systems.pdf",
     "Notes/DBMS/Prev Year QP/B.Tech.-CSE with all specialization-III-Advanced Database Management Systems.pdf",
     "Notes/DBMS/Prev Year QP/B TECH(CSE+ALL)_IV_ AdvancedDatabaseManagementSystems.pdf",
-    "Notes/DBMS/Prev Year QP/8-E-AdvancedDatabaseManagementSystems_20171130124311.783_X_201711301243.pdf",
+    "Notes/DBMS/Prev Year QP/ESE_DEC2020_SOCS_B TECH CSE AI&ML_SEM III_CSEG2017_ADVANCED DATABASE MANAGEMENT SYSTEMS.pdf",
+    "Untitled.md",
+    "Untitled 1.md",
     "menu/index.md",
     "Untitled.canvas",
-    "Notes/DAA/DAA_ Syllabus Th+Lab.pdf",
     "2024-12-09.md",
-    "Notes/DBMS/Prev Year QP/SET-01_SOCS_ESE-DEC23__B.Tech (CSE-H+NH)-All Spec._7_CSBI4011P_Banking & Insurance Technology - Application Architecture, Database & Structures.pdf",
-    "Notes/DBMS/Prev Year QP/SET-01_SOCS_ESE-MAY23_B.Tech (CSE)+All Spec._IV_CSEG2005_Advanced Database Management Systems.pdf",
-    "Notes/DBMS/Prev Year QP/Set01_ESE_MAY24_SOCS_B TECH(CSE-All)_IV_CSEG2005_Advanced Database Management Systems.pdf",
-    "Notes/DBMS/Prev Year QP/ESE_DEC2020_SOCS_B TECH CSE OS&OS_SEM III_CSEG2017_ADVANCED DATABASE MANAGEMENT SYSTEMS.pdf",
     "Notes/sem2/Python/PythonSem2FinalProject/resources/snowball.png",
     "Notes/sem2/Python/PythonSem2FinalProject/resources/tentacles-25x90.png",
     "Notes/sem2/Python/PythonSem2FinalProject/resources/shadow-80x70.png",
