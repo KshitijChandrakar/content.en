@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "3bda2190017f0604",
+        "id": "16c5e46798ca0eb4",
         "type": "tabs",
         "children": [
           {
@@ -13,14 +13,26 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Notes/DBMS/Prev Year QP/Set01_ESE_MAY24_SOCS_B TECH(CSE-All)_IV_CSEG2005_Advanced Database Management Systems.pdf"
+                "file": "Notes/OS/OneDrive_1_8-5-2024/Question Banks/QB-2_UNIT IV,V,VI.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Set01_ESE_MAY24_SOCS_B TECH(CSE-All)_IV_CSEG2005_Advanced Database Management Systems"
+              "title": "QB-2_UNIT IV,V,VI"
             }
           },
           {
-            "id": "cab43f55d4462a70",
+            "id": "e37536efaa2debb7",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Notes/OS/OneDrive_1_8-5-2024/UNIT-5.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "UNIT-5"
+            }
+          },
+          {
+            "id": "b6f493591a870dc9",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -29,6 +41,18 @@
               },
               "icon": "lucide-file-text",
               "title": "Operating System_Syllabus"
+            }
+          },
+          {
+            "id": "72e72a819226b038",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Notes/OS/OneDrive_1_8-5-2024/Unit_6.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Unit_6"
             }
           }
         ],
@@ -174,19 +198,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e24522aa481af8de",
+  "active": "e37536efaa2debb7",
   "lastOpenFiles": [
-    "Notes/OS/OneDrive_1_8-5-2024/Unit_1_Operating_Systems_Notes.pdf",
-    "Notes/OS/OneDrive_1_8-5-2024/U3_IPC_Synchronization_Tools[1].pdf",
-    "Notes/OS/OneDrive_1_8-5-2024/Question Bank for practice Only.pdf",
-    "Notes/OS/OneDrive_1_8-5-2024/OS_IPC_Process_SynchronizationUpdated[1].pdf",
-    "Notes/OS/OneDrive_1_8-5-2024/CPU Scheduling and Algorithm Section -Questions and solutions.pdf",
-    "Notes/OS/OneDrive_1_8-5-2024/Case Study.pdf",
-    "Notes/OS/OneDrive_1_8-5-2024/Unit_2_Operating_Systems_Notes.pdf",
-    "Notes/OS/OneDrive_1_8-5-2024/Deadlock.pdf",
-    "Notes/OS/OneDrive_1_8-5-2024/lu244167elwad.tmp",
+    "Notes/OS/OneDrive_1_8-5-2024/Question Banks/QB-2_UNIT IV,V,VI.pdf",
+    "Notes/OS/OneDrive_1_8-5-2024/Question Banks/Question Bank for practice Only.pdf",
     "Notes/OS/OneDrive_1_8-5-2024/UNIT-5.pdf",
-    "Notes/OS/OneDrive_1_8-5-2024/lu159006xduev.tmp",
+    "Notes/OS/OneDrive_1_8-5-2024/Deadlock.pdf",
+    "Notes/OS/Operating System_Syllabus.pdf",
+    "Notes/OS/OneDrive_1_8-5-2024/Unit_6.pdf",
+    "Notes/DAA/Assignment 1.md",
+    "Notes/OS/OneDrive_1_8-5-2024/OS_IPC_Process_SynchronizationUpdated[1].pdf",
+    "Notes/DAA/Untitled",
+    "Notes/OS/OneDrive_1_8-5-2024/Question Banks",
+    "Notes/OS/OneDrive_1_8-5-2024/Untitled",
+    "Notes/OS/OneDrive_1_8-5-2024/Unit_1_Operating_Systems_Notes.pdf",
+    "Notes/OS/WhatsApp Image 2024-10-16 at 23.33.46_b78731a7.jpg",
+    "Notes/OS/WhatsApp Image 2024-10-16 at 23.33.46_5b2e5316.jpg",
+    "Notes/OS/WhatsApp Image 2024-10-16 at 23.33.45_dc106d10.jpg",
+    "Notes/OS/WhatsApp Image 2024-10-16 at 23.33.45_3efd5698.jpg",
     "Untitled.md",
     "Untitled 1.md",
     "menu/index.md",
@@ -198,10 +227,6 @@
     "Notes/sem2/Python/PythonSem2FinalProject/resources/ranger spritesheet calciumtrice.png",
     "Notes/sem2/Python/PythonSem2FinalProject/resources/minion-45x66.png",
     "Notes/sem2/Python/PythonSem2FinalProject/resources/Obstacle.png",
-    "Notes/sem2/Python/PythonSem2FinalProject/resources/mage-bullet-13x13.png",
-    "Notes/sem2/Python/PythonSem2FinalProject/resources/mage-3-87x110.png",
-    "Notes/sem2/Python/PythonSem2FinalProject/resources/mage-2-122x110.png",
-    "Notes/sem2/Python/PythonSem2FinalProject/resources/mage-1-85x94.png",
     "Notes/sem2/Python/PythonSem2FinalProject/Readme2.md",
     "Notes/sem2/Python/PythonSem2FinalProject/README.md",
     "Notes/sem2/Python/Assignment Unit 5/Unit5AssignmentQuestions.md",
@@ -221,7 +246,6 @@
     "Authoring/The Olive Green Book/Lights.md",
     "Authoring/The Olive Green Book/Untitled.md",
     "Notes/Maths/Kissing Numbers/Kissing Numbers.md",
-    "Notes/Maths/Gerrymandering/Untitled.md",
-    "Notes/Maths/_index.md"
+    "Notes/Maths/Gerrymandering/Untitled.md"
   ]
 }
