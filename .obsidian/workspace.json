@@ -11,12 +11,14 @@
             "id": "be47365f4e497135",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Notes/OS/OneDrive_1_8-5-2024/Question Banks/QB-2_UNIT IV,V,VI.pdf"
+                "file": "Notes/DAA/LabFile.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "QB-2_UNIT IV,V,VI"
+              "icon": "lucide-file",
+              "title": "LabFile"
             }
           },
           {
@@ -55,8 +57,7 @@
               "title": "Unit_6"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,20 +199,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e37536efaa2debb7",
+  "active": "be47365f4e497135",
   "lastOpenFiles": [
+    "Notes/DAA/DAA_ Syllabus Th+Lab.pdf",
+    "Notes/DAA/a.out",
+    "Notes/DAA/Binary Search.cpp",
+    "Notes/DAA/LabFile.md",
+    "Notes/DAA/Assignment 1.md",
+    "Notes/DAA/_index.md",
     "Notes/OS/OneDrive_1_8-5-2024/Question Banks/QB-2_UNIT IV,V,VI.pdf",
-    "Notes/OS/OneDrive_1_8-5-2024/Question Banks/Question Bank for practice Only.pdf",
     "Notes/OS/OneDrive_1_8-5-2024/UNIT-5.pdf",
+    "Notes/OS/OneDrive_1_8-5-2024/Question Banks/Question Bank for practice Only.pdf",
     "Notes/OS/OneDrive_1_8-5-2024/Deadlock.pdf",
     "Notes/OS/Operating System_Syllabus.pdf",
     "Notes/OS/OneDrive_1_8-5-2024/Unit_6.pdf",
-    "Notes/DAA/Assignment 1.md",
     "Notes/OS/OneDrive_1_8-5-2024/OS_IPC_Process_SynchronizationUpdated[1].pdf",
     "Notes/DAA/Untitled",
-    "Notes/OS/OneDrive_1_8-5-2024/Question Banks",
-    "Notes/OS/OneDrive_1_8-5-2024/Untitled",
-    "Notes/OS/OneDrive_1_8-5-2024/Unit_1_Operating_Systems_Notes.pdf",
     "Notes/OS/WhatsApp Image 2024-10-16 at 23.33.46_b78731a7.jpg",
     "Notes/OS/WhatsApp Image 2024-10-16 at 23.33.46_5b2e5316.jpg",
     "Notes/OS/WhatsApp Image 2024-10-16 at 23.33.45_dc106d10.jpg",
@@ -244,8 +247,6 @@
     "Authoring/The Olive Green Book/Untitled 1.md",
     "Authoring/The Olive Green Book/I Think Therefore I Bleed.md",
     "Authoring/The Olive Green Book/Lights.md",
-    "Authoring/The Olive Green Book/Untitled.md",
-    "Notes/Maths/Kissing Numbers/Kissing Numbers.md",
-    "Notes/Maths/Gerrymandering/Untitled.md"
+    "Authoring/The Olive Green Book/Untitled.md"
   ]
 }
