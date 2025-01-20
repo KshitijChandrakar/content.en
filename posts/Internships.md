@@ -7,7 +7,8 @@ P - Pretty Cool
 - https://www.isro.gov.in/InternshipAndProjects.html    
 - https://github.com/SimplifyJobs/Summer2025-Internships?tab=readme-ov-file    
 - https://www.niti.gov.in/sites/default/files/2023-01/NITI_Internship_Guidelines_17012023.pdf    
-- http://internship.mea.gov.in   
+- http://internship.mea.gov.in
+- https://www.startupindia.gov.in/content/sih/en/search.html?roles=Startup&page=0
 
 ## Shortlisted
 MotionBeats mailto:contact@motionbeats.studio
