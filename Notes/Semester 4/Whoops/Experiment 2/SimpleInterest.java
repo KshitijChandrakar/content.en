@@ -7,6 +7,7 @@ class SimpleInterest{
       float Principle = in.nextFloat();
       System.out.print("Enter Interest in %: ");
       float Interest = in.nextFloat();
+      Interest += 100;
       System.out.print("Enter Time: ");
       float Time = in.nextFloat();
       float Amount = Interest * Time * Principle / 100;
