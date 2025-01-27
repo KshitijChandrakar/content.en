@@ -43,7 +43,7 @@ def fetch(z):
 
 def fetchDatasets(datasets_to_use):
     global datasets
-    print("Fetching: ", datasets)
+    print("Fetching:", len(datasets_to_use))
     datasets = {i: fetch(i) for i in datasets_to_use}
     return datasets
 

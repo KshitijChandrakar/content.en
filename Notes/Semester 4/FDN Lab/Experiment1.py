@@ -6,7 +6,10 @@ from SelfLibrary import *
 print(dataset_ids)
 # %% code cell
 datasets_to_use = ["car_evaluation", "abalone", "breast_cancer"]
-datasets1 = setDataset(fetchDatasets(datasets_to_use))
+currently_on = ["car_evaluation"]
+fetchDatasets(currently_on)
+# %% code cell
+print(getDataset())
 
 # %% code cell
 print_stats()
@@ -16,3 +19,5 @@ AllHistograms()
 
 # %% code cell
 AllScatters()
+
+/home/asus/content/

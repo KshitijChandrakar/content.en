@@ -63,4 +63,11 @@ dmypy.json
 .DS_Store
 Thumbs.db
 
-
+# Python Venv
+Notes/Semester 4/FDN Lab/__pycache__
+Notes/Semester 4/FDN Lab/ipynb_checkpoints
+Notes/Semester 4/FDN Lab/bin
+Notes/Semester 4/FDN Lab/include
+Notes/Semester 4/FDN Lab/lib
+Notes/Semester 4/FDN Lab/lib64
+Notes/Semester 4/FDN Lab/share
