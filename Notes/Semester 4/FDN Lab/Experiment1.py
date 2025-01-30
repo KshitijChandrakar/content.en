@@ -1,4 +1,3 @@
-
 # %% code cell
 from SelfLibrary import *
 
@@ -15,6 +14,7 @@ JoinFeaturesAndTargets()
 
 # %% code cell
 print_stats()
+
 
 # %% code cell
 AllHistograms()
