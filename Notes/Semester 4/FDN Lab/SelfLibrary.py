@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 from pprint import pprint
-import seaborn as sb
+import seaborn as sns
 from columnar import columnar
 
 # %% codecell
@@ -32,14 +32,14 @@ datasets = 0
 
 # %% code cell
 def fetch(z):
+    print("Fetching", z, end = " ")
     current_dataset = z
     current_dataset = fetch_ucirepo(id=dataset_ids[current_dataset])
-    print("Fetched", z)
+    print("Done")
     # X, Y = current_dataset.data.features, current_dataset.data.targets
     # variables = current_dataset.variables
     # metadata = current_dataset.metadata
     return current_dataset
-
 
 def fetchDatasets(datasets_to_use):
     global datasets
@@ -47,19 +47,20 @@ def fetchDatasets(datasets_to_use):
     datasets = {i: fetch(i) for i in datasets_to_use}
     return datasets
 
-
-def setDataset(dataset1):
-    # global datasets
-    datasets = dataset1
-    return dataset1
-    pass
-
-
 def getDataset():
     global datasets
     print(datasets)
     return datasets
     pass
+def JoinFeaturesAndTargets():
+    global datasets
+
+    for dataset in datasets:
+        try:
+            datasets[dataset].data.features = datasets[dataset].data.features.join(datasets[dataset].data.targets)
+        except ValueError:
+            print("Features and Targets Already Joint")
+
 
 
 # %% codecell
@@ -72,7 +73,7 @@ def ScatterXY(X, Y):
         plt.show()
 
 
-def Scatter(i, j, X=0, Y=None, num_rows=1000):
+def ScatterMatplotlib(i, j, X=0, Y=None, num_rows=1000):
     if type(Y) == type(None):
         plt.scatter(y=X[i][:num_rows], x=X[j][:num_rows])
         plt.xlabel(j)
@@ -86,30 +87,6 @@ def Scatter(i, j, X=0, Y=None, num_rows=1000):
         plt.title(i + " vs " + j + " Plot")
         plt.show()
 
-
-def ScatterColors(X):
-    for i in X.keys():
-        for j in X.keys():
-            if i == j:
-                continue
-            sns.scatterplot(
-                data=X,
-                x=i,
-                y=j,
-                # hue="category",  # Color based on 'category'
-                # palette="coolwarm",  # Custom color palette
-                s=100,  # Marker size
-            )
-            pass
-    pass
-
-
-def ScatterEverything(X):
-    for i in X.keys():
-        for j in X.keys():
-            if i == j:
-                continue
-            Scatter(i, j, X)
 
 
 def Histogram(name, data):
@@ -155,6 +132,37 @@ def MulticolorHistogram(X, column_name, Y, color_col, num_bins=10):
     plt.legend()  # Add legend to show color mapping
     plt.show()
 
+# %% code cell
+
+
+def ScatterEverything(hue = None):
+    if hue == None:
+        for dataset in datasets:
+            data = datasets[dataset].data.features
+            for i in data.keys():
+                for j in data.keys():
+                    if i == j:
+                        continue
+                        sns.relplot(
+                        data=data,
+                        x=i,
+                        y=j
+                    )
+                    pass
+    else:
+        for dataset in datasets:
+            data = datasets[dataset].data.features
+            for i in data.keys():
+                for j in data.keys():
+                    if i == j or i == hue or j == hue:
+                        continue
+                        sns.relplot(
+                        data=data,
+                        x=i,
+                        y=j,
+                        hue = hue,
+                    )
+                    pass
 
 # %% code cell
 def features_end_index(variables):
@@ -219,7 +227,7 @@ def AllHistograms():
     global datasets
     for dataset in datasets:
         print("=" * 10, "Current Dataset: " + dataset, sep="\n")
-        data = datasets[dataset].data.features.join(datasets[dataset].data.targets)
+        data = datasets[dataset].data.features
         for i in data:
             Histogram(dataset + " | " + i, data[i])
 
@@ -231,8 +239,4 @@ def AllHistograms():
 def AllScatters():
     for dataset in datasets:
         print("=" * 10, "Current Dataset: " + dataset, sep="\n")
-        data = datasets[dataset].data.features.join(datasets[dataset].data.targets)
         ScatterEverything(data)
-
-
-# AllScatters()

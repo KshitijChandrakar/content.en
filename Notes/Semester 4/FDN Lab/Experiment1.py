@@ -3,13 +3,15 @@
 from SelfLibrary import *
 
 # %% code cell
-print(dataset_ids)
+getDataset()
 # %% code cell
 datasets_to_use = ["car_evaluation", "abalone", "breast_cancer"]
 currently_on = ["car_evaluation"]
-fetchDatasets(currently_on)
+_ = fetchDatasets(currently_on)
+
 # %% code cell
-print(getDataset())
+JoinFeaturesAndTargets()
+
 
 # %% code cell
 print_stats()
@@ -20,4 +22,5 @@ AllHistograms()
 # %% code cell
 AllScatters()
 
-/home/asus/content/
+# %% code cell
+ScatterSNSEverything()
