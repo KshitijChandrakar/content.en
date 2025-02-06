@@ -1,8 +1,8 @@
 library(ggplot2)
 
 # 6. Generate and plot 1000 random normal values
-mean_value <- as.numeric(readline("Enter mean: "))
-sd_value <- as.numeric(readline("Enter standard deviation: "))
+mean_value <- as.numeric(system("read -p 'Enter mean: ' input; echo ", intern=TRUE))
+sd_value <- as.numeric(system("read -p 'Enter standard deviation: ' input; echo ", intern=TRUE))
 mean_value <- 10
 sd_value <- 20
 random_values <- rnorm(1000, mean_value, sd_value)
