@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/DAA/LabFile.md",
+                "file": "Notes/Semester 4/DCN Lab/Assignment 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LabFile"
+              "title": "Assignment 2"
             }
           },
           {
@@ -201,6 +201,17 @@
   },
   "active": "be47365f4e497135",
   "lastOpenFiles": [
+    "Notes/Semester 4/DCN Lab/Assignment2_500125940.pdf",
+    "Notes/Semester 4/DCN Lab/Assignment2_500124827.pdf",
+    "Notes/Semester 4/DCN Lab/Screenshot_20250201_222859.png",
+    "Notes/Semester 4/DCN Lab/Assignment 2.md.html",
+    "Pasted image 20250201222415.png",
+    "Pasted image 20250201221101.png",
+    "Pasted image 20250201221059.png",
+    "Notes/Semester 4/DCN Lab/BitStuffing.py",
+    "Notes/Semester 4/DCN Lab/Assignment 2.md",
+    "Notes/Semester 4/DCN Lab",
+    "Notes/Semester 4/DCN/Untitled",
     "Notes/DAA/DAA_ Syllabus Th+Lab.pdf",
     "Notes/DAA/a.out",
     "Notes/DAA/Binary Search.cpp",
@@ -209,12 +220,6 @@
     "Notes/DAA/_index.md",
     "Notes/OS/OneDrive_1_8-5-2024/Question Banks/QB-2_UNIT IV,V,VI.pdf",
     "Notes/OS/OneDrive_1_8-5-2024/UNIT-5.pdf",
-    "Notes/OS/OneDrive_1_8-5-2024/Question Banks/Question Bank for practice Only.pdf",
-    "Notes/OS/OneDrive_1_8-5-2024/Deadlock.pdf",
-    "Notes/OS/Operating System_Syllabus.pdf",
-    "Notes/OS/OneDrive_1_8-5-2024/Unit_6.pdf",
-    "Notes/OS/OneDrive_1_8-5-2024/OS_IPC_Process_SynchronizationUpdated[1].pdf",
-    "Notes/DAA/Untitled",
     "Notes/OS/WhatsApp Image 2024-10-16 at 23.33.46_b78731a7.jpg",
     "Notes/OS/WhatsApp Image 2024-10-16 at 23.33.46_5b2e5316.jpg",
     "Notes/OS/WhatsApp Image 2024-10-16 at 23.33.45_dc106d10.jpg",
@@ -226,10 +231,6 @@
     "2024-12-09.md",
     "Notes/sem2/Python/PythonSem2FinalProject/resources/snowball.png",
     "Notes/sem2/Python/PythonSem2FinalProject/resources/tentacles-25x90.png",
-    "Notes/sem2/Python/PythonSem2FinalProject/resources/shadow-80x70.png",
-    "Notes/sem2/Python/PythonSem2FinalProject/resources/ranger spritesheet calciumtrice.png",
-    "Notes/sem2/Python/PythonSem2FinalProject/resources/minion-45x66.png",
-    "Notes/sem2/Python/PythonSem2FinalProject/resources/Obstacle.png",
     "Notes/sem2/Python/PythonSem2FinalProject/Readme2.md",
     "Notes/sem2/Python/PythonSem2FinalProject/README.md",
     "Notes/sem2/Python/Assignment Unit 5/Unit5AssignmentQuestions.md",
@@ -246,7 +247,6 @@
     "posts/Anthropocene Mug.md",
     "Authoring/The Olive Green Book/Untitled 1.md",
     "Authoring/The Olive Green Book/I Think Therefore I Bleed.md",
-    "Authoring/The Olive Green Book/Lights.md",
-    "Authoring/The Olive Green Book/Untitled.md"
+    "Authoring/The Olive Green Book/Lights.md"
   ]
 }
