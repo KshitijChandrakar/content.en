@@ -13,6 +13,9 @@ public class Company {
     }
     System.out.println("Total Number Of Employees: " + Employee.TotalEmployees());
     TotalSalary();
+    for (int i = 1; i < Employees.length ; i++) {
+      Employees[i].DisplayEmployeeInfo();
+    }
   }
 
   // Total Salary
@@ -64,6 +67,7 @@ class Employee{
     System.out.println("ID: " + ID);
     System.out.println("Name: " + name);
     System.out.println("Department: " + department);
+    System.out.println("Salary: " + salary);
     System.out.println("----------");
   }
 }
