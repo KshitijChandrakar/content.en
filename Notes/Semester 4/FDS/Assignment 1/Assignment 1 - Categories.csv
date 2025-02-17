@@ -1,0 +1,6 @@
+Count,Unique,Category Sum,Catergory Count,Count Probablity,Expected Purchase Amount
+200,Furniture,14465.19,49,0.245,12.005
+,Sports,9357.05,36,0.18,6.48
+,Grocery,9569.76,37,0.185,6.845
+,Clothing,8431.2,35,0.175,6.125
+,Electronics,10370.4,43,0.215,9.245
