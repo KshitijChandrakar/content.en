@@ -1,0 +1,4 @@
+Question 2: Create a Histogram
+- Generate a random dataset of students' test scores
+- Visualize data distribution using histograms.
+- Understand skewness and spread of data.

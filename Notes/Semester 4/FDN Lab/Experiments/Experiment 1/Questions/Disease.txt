@@ -1,0 +1,1 @@
+Question 4: Let the user enter prior probability, sensitivity, and false positive rate to compute the probability of having a disease given a positive test.

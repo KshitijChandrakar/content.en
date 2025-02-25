@@ -1,0 +1,21 @@
+
+\centering
+\section*{\Large Experiment 2}
+
+\foreach \file in {Q1, Q2, Q3, Q4}{
+  \begin{minipage}{\textwidth}
+    \subsection*{\input {Experiment 2/Questions/\file.txt}}
+    \begin{minipage}{\textwidth}
+        \subsubsection*{Code}
+        \inputminted[firstline=3, breaklines]{R}{Experiment 2/Code/\file.R}
+    \end{minipage}
+
+    \hfill
+
+    \begin{minipage}{\textwidth}
+        \subsubsection*{Output}
+        \resizebox{\textwidth}{!}{\includegraphics[width=\textwidth]{Experiment 2/screenshots/\file.png}}  % Resizes to full width
+    \end{minipage}
+
+  \end{minipage}
+}

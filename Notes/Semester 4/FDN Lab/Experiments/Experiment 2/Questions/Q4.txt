@@ -1,0 +1,5 @@
+4. Boxplot for Detecting Outliers
+- Dataset: Simulated monthly sales data for a store. Generate random monthly sales data to
+analyze outliers.
+- Create a boxplot to detect outliers.
+- Understand quartiles and interquartile range (IQR)

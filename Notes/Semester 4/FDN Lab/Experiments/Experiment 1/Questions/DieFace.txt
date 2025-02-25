@@ -1,0 +1,1 @@
+Question 1: Ask the user to enter a die face (1-6). Compute the probability of rolling that number in a fair die roll

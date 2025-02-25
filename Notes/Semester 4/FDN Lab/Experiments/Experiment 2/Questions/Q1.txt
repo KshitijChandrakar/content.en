@@ -1,0 +1,4 @@
+Question 1. Summary Statistics for a Dataset
+Dataset: Built-in mtcars dataset (Car Specifications)
+- Compute summary statistics (mean, median, standard deviation, etc.).
+- Understand the distribution of miles per gallon (mpg) and horsepower (hp).

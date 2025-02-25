@@ -1,0 +1,10 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} 7. Compute expected value}
+\PYG{n}{cost}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{n+nf}{as.numeric}\PYG{p}{(}\PYG{n+nf}{system}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{read \PYGZhy{}p \PYGZsq{}Enter cost of the game: \PYGZsq{} input; echo \PYGZdl{}input\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{intern}\PYG{o}{=}\PYG{k+kc}{TRUE}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{outcomes}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{n+nf}{as.character}\PYG{p}{(}\PYG{n+nf}{system}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{read \PYGZhy{}p \PYGZsq{}Enter possible outcomes (comma\PYGZhy{}separated): \PYGZsq{} input; echo \PYGZdl{}input\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{intern}\PYG{o}{=}\PYG{k+kc}{TRUE}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{outcomes}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{n+nf}{as.numeric}\PYG{p}{(}\PYG{n+nf}{strsplit}\PYG{p}{(}\PYG{n}{outcomes}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{,\PYGZdq{}}\PYG{p}{)}\PYG{p}{[[}\PYG{l+m}{1}\PYG{p}{]]}\PYG{p}{)}
+\PYG{n}{probabilities}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{n+nf}{system}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{read \PYGZhy{}p \PYGZsq{}Enter their probabilities (comma\PYGZhy{}separated): \PYGZsq{} input; echo \PYGZdl{}input\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{intern}\PYG{o}{=}\PYG{k+kc}{TRUE}\PYG{p}{)}
+\PYG{n}{probabilities}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{n+nf}{as.numeric}\PYG{p}{(}\PYG{n+nf}{strsplit}\PYG{p}{(}\PYG{n}{probabilities}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{,\PYGZdq{}}\PYG{p}{)}\PYG{p}{[[}\PYG{l+m}{1}\PYG{p}{]]}\PYG{p}{)}
+\PYG{n}{expected\PYGZus{}value}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{n+nf}{sum}\PYG{p}{(}\PYG{n}{outcomes}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{probabilities}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{cost}
+\PYG{n+nf}{cat}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Expected Value:\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{expected\PYGZus{}value}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{\PYGZbs{}n\PYGZdq{}}\PYG{p}{)}
+\end{MintedVerbatim}

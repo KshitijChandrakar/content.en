@@ -1,0 +1,22 @@
+
+\begin{table}[h]
+    \centering
+    {\Huge \textbf{Index}} \\[0.5cm]
+\renewcommand{\arraystretch}{1.5}
+\makebox[\textwidth]{
+
+\pgfplotstabletypeset[
+col sep=semicolon,   % Use comma-separated values
+string type,     % Treat everything as text
+every head row/.style={before row=\hline, after row=\hline},  % Header with horizontal lines
+every last row/.style={after row=\hline},  % Bottom border
+every row/.style={after row=\hline},  % Add \hline after each row
+columns={Exp. No.,Objective,Date of Performance,Date of Submission},  % Select columns
+columns/Exp. No./.style={column type={|c}},
+columns/Objective/.style={column type={|m{6cm}}},
+columns/Date of Performance/.style={column type={|c}},
+columns/Date of Submission/.style={column type={|c|}}
+]
+    {Index.scsv}  % Load the data from TSV file
+}
+\end{table}

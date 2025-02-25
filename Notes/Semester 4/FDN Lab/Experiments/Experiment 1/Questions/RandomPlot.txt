@@ -1,0 +1,1 @@
+Question 6: Ask the user for a mean and standard deviation, generate 1000 random normal values, and plot them.

@@ -1,0 +1,21 @@
+
+\documentclass[12pt, letterpaper]{article}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{tocloft} % For modifying TOC layout
+\usepackage{longtable} % For multi-page tables if needed
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage{pgfplotstable}  % For loading table data from CSV
+\usepackage{booktabs}  % For better table formatting
+\usepackage{minted}
+\pgfplotsset {compat=1.18}
+
+\begin{document}
+\include{titlepage}
+\include{Index}
+\input{Experiment 1/Experiment1}
+\input{Experiment 2/Experiment2}
+\input{Experiment 3/Experiment3}
+\end{document}

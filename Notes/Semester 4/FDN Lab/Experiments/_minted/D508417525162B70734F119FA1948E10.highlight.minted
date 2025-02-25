@@ -1,0 +1,11 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+
+\PYG{c+c1}{\PYGZsh{} 4. Compute probability of disease given a positive test (Bayes\PYGZsq{} Theorem)}
+\PYG{n}{command}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nf}{paste}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{read \PYGZhy{}p \PYGZsq{}Enter prior probability of disease: \PYGZsq{} input; echo \PYGZdl{}input\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{sep}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
+
+\PYG{n}{prior}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{n+nf}{as.numeric}\PYG{p}{(}\PYG{n+nf}{system}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{read \PYGZhy{}p \PYGZsq{}Enter prior probability of disease: \PYGZsq{} input; echo \PYGZdl{}input\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{intern}\PYG{o}{=}\PYG{k+kc}{TRUE}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{sensitivity}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{n+nf}{as.numeric}\PYG{p}{(}\PYG{n+nf}{system}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{read \PYGZhy{}p \PYGZsq{}Enter sensitivity (true positive rate):  \PYGZsq{} input; echo \PYGZdl{}input\PYGZdq{}}\PYG{p}{,}\PYG{n}{intern}\PYG{o}{=}\PYG{k+kc}{TRUE}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{false\PYGZus{}positive}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{n+nf}{as.numeric}\PYG{p}{(}\PYG{n+nf}{system}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{read \PYGZhy{}p \PYGZsq{}Enter false positive rate: \PYGZsq{} input; echo \PYGZdl{}input\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{intern}\PYG{o}{=}\PYG{k+kc}{TRUE}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{posterior}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{sensitivity}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{prior}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{p}{(}\PYG{p}{(}\PYG{n}{sensitivity}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{prior}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{false\PYGZus{}positive}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{p}{(}\PYG{l+m}{1}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{prior}\PYG{p}{)}\PYG{p}{)}\PYG{p}{)}
+\PYG{n+nf}{cat}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Probability of having disease given a positive test:\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{posterior}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{\PYGZbs{}n\PYGZdq{}}\PYG{p}{)}
+\end{MintedVerbatim}

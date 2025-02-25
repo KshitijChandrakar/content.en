@@ -1,0 +1,9 @@
+"ID","Name","Age","Salary","Score"
+1,"Alice",25,50000,80
+2,"Bob",NA,60000,90
+3,NA,30,55000,NA
+5,"Emma",NA,70000,88
+6,"Frank",35,75000,92
+7,NA,40,80000,NA
+8,"Hannah",NA,65000,77
+10,"Jack",27,72000,Inf

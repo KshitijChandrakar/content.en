@@ -1,0 +1,26 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{library}\PYG{p}{(}\PYG{n}{ggplot2}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} 6. Generate and plot 1000 random normal values}
+\PYG{n}{mean\PYGZus{}value}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{n+nf}{as.numeric}\PYG{p}{(}\PYG{n+nf}{system}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{read \PYGZhy{}p \PYGZsq{}Enter mean: \PYGZsq{} input; echo \PYGZdl{}input\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{intern}\PYG{o}{=}\PYG{k+kc}{TRUE}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{sd\PYGZus{}value}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{n+nf}{as.numeric}\PYG{p}{(}\PYG{n+nf}{system}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{read \PYGZhy{}p \PYGZsq{}Enter standard deviation: \PYGZsq{} input; echo \PYGZdl{}input\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{intern}\PYG{o}{=}\PYG{k+kc}{TRUE}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Generate random values from normal distribution}
+\PYG{n}{random\PYGZus{}values}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{n+nf}{rnorm}\PYG{p}{(}\PYG{l+m}{1000}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{mean\PYGZus{}value}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{sd\PYGZus{}value}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Create the plot}
+\PYG{n}{p}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{n+nf}{ggplot}\PYG{p}{(}\PYG{n+nf}{data.frame}\PYG{p}{(}\PYG{n}{x}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{random\PYGZus{}values}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nf}{aes}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{+}
+\PYG{+w}{  }\PYG{n+nf}{geom\PYGZus{}histogram}\PYG{p}{(}\PYG{n}{binwidth}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m}{0.5}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{fill}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{blue\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{alpha}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m}{0.7}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{+}
+\PYG{+w}{  }\PYG{n+nf}{theme\PYGZus{}minimal}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{+}
+\PYG{+w}{  }\PYG{n+nf}{ggtitle}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Normal Distribution\PYGZdq{}}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{+}
+\PYG{+w}{  }\PYG{n+nf}{theme}\PYG{p}{(}
+\PYG{+w}{    }\PYG{n}{panel.background}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nf}{element\PYGZus{}rect}\PYG{p}{(}\PYG{n}{fill}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{white\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{color}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{white\PYGZdq{}}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{} White panel}
+\PYG{+w}{    }\PYG{n}{plot.background}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nf}{element\PYGZus{}rect}\PYG{p}{(}\PYG{n}{fill}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{white\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{color}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{white\PYGZdq{}}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{   }\PYG{c+c1}{\PYGZsh{} White plot area}
+\PYG{+w}{    }\PYG{n}{panel.grid.major}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nf}{element\PYGZus{}line}\PYG{p}{(}\PYG{n}{color}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{gray90\PYGZdq{}}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{                 }\PYG{c+c1}{\PYGZsh{} Light grid lines}
+\PYG{+w}{    }\PYG{n}{panel.grid.minor}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nf}{element\PYGZus{}blank}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{                                  }\PYG{c+c1}{\PYGZsh{} Remove minor grid lines}
+\PYG{+w}{  }\PYG{p}{)}
+
+
+\PYG{c+c1}{\PYGZsh{} Save the plot}
+\PYG{n+nf}{ggsave}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{normal\PYGZus{}distribution.png\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{plot}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{p}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{width}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m}{6}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{height}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m}{4}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{dpi}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m}{300}\PYG{p}{)}
+\end{MintedVerbatim}

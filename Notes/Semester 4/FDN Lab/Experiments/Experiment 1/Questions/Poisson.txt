@@ -1,0 +1,1 @@
+Question 8: Let the user enter lambda (average rate per hour) and k (specific number of events) to compute the probability using a Poisson distribution.

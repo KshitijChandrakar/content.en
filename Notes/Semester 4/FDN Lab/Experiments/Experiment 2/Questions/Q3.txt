@@ -1,0 +1,5 @@
+3. Scatterplot to Explore Relationships
+Dataset: Built-in iris dataset (Flower Measurements)
+The iris dataset contains sepal and petal lengths and widths of three flower species.
+- Create a scatterplot to explore relationships between variables.
+- Use colors to distinguish species.

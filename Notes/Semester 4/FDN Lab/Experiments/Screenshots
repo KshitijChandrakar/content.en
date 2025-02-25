@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Check if an argument is provided
+if [ -z "$1" ]; then
+    echo "Usage: $0 <folder_path>"
+    exit 1
+fi
+
+# Change directory to the specified folder
+cd "$1" || { echo "Error: Could not change to directory '$1'"; exit 1; }
+
+
+# Create a folder for screenshots
+mkdir -p screenshots
+
+#Clear the terminal beforehand
+clear
+# Loop through all R files in the current directory
+for file in *.R; do
+    # Print file name for reference
+    echo "Running $file..."
+
+    # Run the R script
+    Rscript "$file"
+
+    # Take a screenshot of the terminal
+    spectacle --activewindow -a -n -b -o "screenshots/${file%.R}.png"
+
+    # crop it
+    mogrify -crop 955x400+69+190 "screenshots/${file%.R}.png"
+    # Clear the terminal
+    clear
+done
+
+echo "All scripts executed and screenshots saved in 'screenshots/'"

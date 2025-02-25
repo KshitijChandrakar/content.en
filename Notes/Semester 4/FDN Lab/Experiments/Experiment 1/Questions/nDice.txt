@@ -1,0 +1,1 @@
+Question 5: Let the user roll a die n times and compute the probability of each outcome.

@@ -1,0 +1,9 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+
+\PYG{c+c1}{\PYGZsh{} 5. Roll a die n times and compute probabilities}
+\PYG{n}{n}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{n+nf}{as.integer}\PYG{p}{(}\PYG{n+nf}{system}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{read \PYGZhy{}p \PYGZsq{}Enter number of die rolls: \PYGZsq{} input; echo \PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{intern}\PYG{o}{=}\PYG{k+kc}{TRUE}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{n}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{l+m}{3}
+\PYG{n}{rolls}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{n+nf}{sample}\PYG{p}{(}\PYG{l+m}{1}\PYG{o}{:}\PYG{l+m}{6}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{replace}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k+kc}{TRUE}\PYG{p}{)}
+\PYG{n}{probabilities}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{n+nf}{table}\PYG{p}{(}\PYG{n}{rolls}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{n}{n}
+\PYG{n+nf}{print}\PYG{p}{(}\PYG{n}{probabilities}\PYG{p}{)}
+\end{MintedVerbatim}

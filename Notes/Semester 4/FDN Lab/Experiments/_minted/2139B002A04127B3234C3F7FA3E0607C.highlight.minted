@@ -1,0 +1,7 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} 3. Union probability of two sets}
+\PYG{n}{set1}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{n+nf}{as.integer}\PYG{p}{(}\PYG{n+nf}{strsplit}\PYG{p}{(}\PYG{n+nf}{system}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{read \PYGZhy{}p \PYGZsq{}Enter first set of numbers (comma\PYGZhy{}separated, 1\PYGZhy{}6): \PYGZsq{} input; echo \PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{intern}\PYG{o}{=}\PYG{k+kc}{TRUE}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{,\PYGZdq{}}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{set2}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{n+nf}{as.integer}\PYG{p}{(}\PYG{n+nf}{strsplit}\PYG{p}{(}\PYG{n+nf}{system}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{read \PYGZhy{}p \PYGZsq{}Enter second set of numbers (comma\PYGZhy{}separated, 1\PYGZhy{}6): \PYGZsq{} input; echo \PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{intern}\PYG{o}{=}\PYG{k+kc}{TRUE}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{,\PYGZdq{}}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{union\PYGZus{}prob}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{n+nf}{length}\PYG{p}{(}\PYG{n+nf}{unique}\PYG{p}{(}\PYG{n+nf}{c}\PYG{p}{(}\PYG{n}{set1}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{set2}\PYG{p}{)}\PYG{p}{)}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{l+m}{6}
+\PYG{n+nf}{cat}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Union probability:\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{union\PYGZus{}prob}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{\PYGZbs{}n\PYGZdq{}}\PYG{p}{)}
+\end{MintedVerbatim}

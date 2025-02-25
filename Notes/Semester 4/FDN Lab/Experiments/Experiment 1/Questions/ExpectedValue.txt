@@ -1,0 +1,1 @@
+Question 7: Let the user enter the cost of'a game and the outcomes to compute expected value.

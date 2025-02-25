@@ -1,0 +1,19 @@
+\centering
+\section*{\Large Experiment 1}
+
+\foreach \file in {DieFace, TwoDice, UnionProbablity, Disease, nDice, RandomPlot, ExpectedValue, Poisson}{
+  \begin{minipage}{\textwidth}
+    \subsection*{\input {Experiment 1/Questions/\file.txt}}
+    \begin{minipage}{\textwidth}
+        \subsubsection*{Code}
+        \inputminted[firstline=3, breaklines]{R}{Experiment 1/Code/\file.R}
+    \end{minipage}
+
+    \hfill
+
+    \begin{minipage}{\textwidth}
+        \subsubsection*{Output}
+        \resizebox{\textwidth}{!}{\includegraphics[width=\textwidth]{Experiment 1/screenshots/\file.png}}  % Resizes to full width
+    \end{minipage}
+  \end{minipage}
+}

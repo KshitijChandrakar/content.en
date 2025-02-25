@@ -1,0 +1,11 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} 1. Compute probability of rolling a specific die face}
+\PYG{c+c1}{\PYGZsh{} print()}
+\PYG{n}{die\PYGZus{}face}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{+w}{ }\PYG{n+nf}{as.integer}\PYG{p}{(}\PYG{n+nf}{system}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{read \PYGZhy{}p \PYGZsq{}Enter a Die Number(1\PYGZhy{}6): \PYGZsq{} input; echo \PYGZdl{}input\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{intern}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k+kc}{TRUE}\PYG{p}{)}\PYG{p}{)}
+\PYG{n+nf}{print}\PYG{p}{(}\PYG{n}{die\PYGZus{}face}\PYG{p}{)}
+\PYG{n+nf}{if }\PYG{p}{(}\PYG{n}{die\PYGZus{}face}\PYG{+w}{ }\PYG{o}{\PYGZgt{}=}\PYG{+w}{ }\PYG{l+m}{1}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{die\PYGZus{}face}\PYG{+w}{ }\PYG{o}{\PYGZlt{}=}\PYG{+w}{ }\PYG{l+m}{6}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{  }\PYG{n+nf}{cat}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Probability:\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m}{1}\PYG{o}{/}\PYG{l+m}{6}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{\PYGZbs{}n\PYGZdq{}}\PYG{p}{)}
+\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{n}{else}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{  }\PYG{n+nf}{cat}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Invalid input.\PYGZbs{}n\PYGZdq{}}\PYG{p}{)}
+\PYG{p}{\PYGZcb{}}
+\end{MintedVerbatim}
