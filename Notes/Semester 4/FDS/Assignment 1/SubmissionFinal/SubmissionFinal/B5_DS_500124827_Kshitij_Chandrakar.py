@@ -13,6 +13,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 import numpy as np
+
 import os as os
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
@@ -74,6 +75,8 @@ def MetaPlotDetails(xlabel = "", ylabel = "", title = "", rotation = 0):
     plt.title(title)
     pass
 
+
+# %%
 
 ####################################################
 # Trends Analysis
@@ -168,7 +171,7 @@ plt.show()
 # Customer Purchase Frequency
 #------------------------
 customer_purchases = df.groupby('Customer_ID')['Purchase_Date'].nunique()
-sns.histplot(customer_purchases, bins=20, kde=True, palette=['lightcoral', 'lightskyblue'])
+sns.histplot(customer_purchases, bins=20, palette=['lightcoral', 'lightskyblue'])
 MetaPlotDetails(xlabel = "Number of Purchases", ylabel = "Number of Customers", title = "Customer Purchase Frequency")
 plt.show()
 

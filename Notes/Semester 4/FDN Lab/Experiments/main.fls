@@ -436,59 +436,33 @@ INPUT ./Experiment 1/screenshots/Poisson.png
 INPUT ./Experiment 1/screenshots/Poisson.png
 INPUT ./Experiment 1/screenshots/Poisson.png
 INPUT ./Experiment 1/screenshots/Poisson.png
-INPUT ./Experiment 2/Experiment2.tex
-INPUT ./Experiment 2/Experiment2.tex
-INPUT ./Experiment 2/Experiment2.tex
-INPUT ./Experiment 2/Experiment2.tex
-INPUT Experiment 2/Experiment2.tex
-INPUT ./Experiment 2/Questions/Q1.txt
-INPUT ./Experiment 2/Questions/Q1.txt
-INPUT Experiment 2/Questions/Q1.txt
-INPUT ./Experiment 2/Code/Q1.R
-INPUT ./_minted/1D46C5543CA3C826591D3308CCEF521F.highlight.minted
-INPUT ./_minted/1D46C5543CA3C826591D3308CCEF521F.highlight.minted
-INPUT _minted/1D46C5543CA3C826591D3308CCEF521F.highlight.minted
-INPUT ./Experiment 2/screenshots/Q1.png
-INPUT ./Experiment 2/screenshots/Q1.png
-INPUT ./Experiment 2/screenshots/Q1.png
-INPUT ./Experiment 2/screenshots/Q1.png
-INPUT ./Experiment 2/screenshots/Q1.png
-INPUT ./Experiment 2/Questions/Q2.txt
-INPUT ./Experiment 2/Questions/Q2.txt
-INPUT Experiment 2/Questions/Q2.txt
-INPUT ./Experiment 2/Code/Q2.R
-INPUT ./_minted/CD7F39B4A7CAA11065536FC1422F2CC5.highlight.minted
-INPUT ./_minted/CD7F39B4A7CAA11065536FC1422F2CC5.highlight.minted
-INPUT _minted/CD7F39B4A7CAA11065536FC1422F2CC5.highlight.minted
-INPUT ./Experiment 2/screenshots/Q2.png
-INPUT ./Experiment 2/screenshots/Q2.png
-INPUT ./Experiment 2/screenshots/Q2.png
-INPUT ./Experiment 2/screenshots/Q2.png
-INPUT ./Experiment 2/screenshots/Q2.png
-INPUT ./Experiment 2/Questions/Q3.txt
-INPUT ./Experiment 2/Questions/Q3.txt
-INPUT Experiment 2/Questions/Q3.txt
-INPUT ./Experiment 2/Code/Q3.R
-INPUT ./_minted/7839C32F4F3D836B8545B814430499FD.highlight.minted
-INPUT ./_minted/7839C32F4F3D836B8545B814430499FD.highlight.minted
-INPUT _minted/7839C32F4F3D836B8545B814430499FD.highlight.minted
-INPUT ./Experiment 2/screenshots/Q3.png
-INPUT ./Experiment 2/screenshots/Q3.png
-INPUT ./Experiment 2/screenshots/Q3.png
-INPUT ./Experiment 2/screenshots/Q3.png
-INPUT ./Experiment 2/screenshots/Q3.png
-INPUT ./Experiment 2/Questions/Q4.txt
-INPUT ./Experiment 2/Questions/Q4.txt
-INPUT Experiment 2/Questions/Q4.txt
-INPUT ./Experiment 2/Code/Q4.R
-INPUT ./_minted/F3EA98925CB0C526B7DB836D4F5A73F1.highlight.minted
-INPUT ./_minted/F3EA98925CB0C526B7DB836D4F5A73F1.highlight.minted
-INPUT _minted/F3EA98925CB0C526B7DB836D4F5A73F1.highlight.minted
-INPUT ./Experiment 2/screenshots/Q4.png
-INPUT ./Experiment 2/screenshots/Q4.png
-INPUT ./Experiment 2/screenshots/Q4.png
-INPUT ./Experiment 2/screenshots/Q4.png
-INPUT ./Experiment 2/screenshots/Q4.png
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
+INPUT ./Experiment 2/Experiment2.pdf
 INPUT ./Experiment 3/Experiment3.tex
 INPUT ./Experiment 3/Experiment3.tex
 INPUT ./Experiment 3/Experiment3.tex
@@ -540,6 +514,14 @@ INPUT ./Experiment 3/Tex/Q2.pdf
 INPUT ./Experiment 3/Tex/Q2.pdf
 INPUT ./Experiment 3/Tex/Q2.pdf
 INPUT ./Experiment 3/Tex/Q2.pdf
+INPUT ./Experiment 3/Tex/Q2.pdf
+INPUT ./Experiment 3/Tex/Q2.pdf
+INPUT ./Experiment 3/Tex/Q2.pdf
+INPUT ./Experiment 3/Tex/Q2.pdf
+INPUT ./Experiment 3/Tex/Q3.pdf
+INPUT ./Experiment 3/Tex/Q3.pdf
+INPUT ./Experiment 3/Tex/Q3.pdf
+INPUT ./Experiment 3/Tex/Q3.pdf
 INPUT ./Experiment 3/Tex/Q3.pdf
 INPUT ./Experiment 3/Tex/Q3.pdf
 INPUT ./Experiment 3/Tex/Q3.pdf
@@ -587,18 +569,15 @@ INPUT ./Index.aux
 INPUT Index.aux
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfit1095.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfit1200.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb
