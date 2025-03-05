@@ -1,1 +1,6 @@
-{}
+{
+  "enabledCssSnippets": [
+    "twocolumn",
+    "two-column"
+  ]
+}
