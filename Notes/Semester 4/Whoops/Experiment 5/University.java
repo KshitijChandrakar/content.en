@@ -99,10 +99,11 @@ class GraduateStudent extends Student {
     }
 }
 
-public class UniversityManagementSystem {
+public class University{
     public static void main(String[] args) {
-        Professor professor = new Professor("Dr. Smith", 45, "123 University Ave", "S123", "Computer Science", "Artificial Intelligence");
-        GraduateStudent gradStudent = new GraduateStudent("Alice", 25, "456 College St", "ST456", "MSc Computer Science", "Machine Learning");
+        Professor professor = new Professor("Dr. Doctor", 45, "Some Address", "S123", "Computer Science", "Artificial Intelligence");
+
+        GraduateStudent gradStudent = new GraduateStudent("Graduate Idiot", 25, "Somewhereeeee", "S456", "MSc Computer Science", "Machine Learning");
 
         Person[] people = new Person[2];
         people[0] = professor;
