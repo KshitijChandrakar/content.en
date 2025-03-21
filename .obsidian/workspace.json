@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b546ece7b5b9d005",
+        "id": "9fbc07cbb8ef37d8",
         "type": "tabs",
         "children": [
           {
-            "id": "b8919d308ef1709f",
+            "id": "42b9a7d5e68d1c41",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Semester 4/DCN/Notes/Oof.md",
-                "mode": "preview",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Oof"
+              "title": "New tab"
             }
           }
         ]
@@ -166,40 +162,41 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "b8919d308ef1709f",
+  "active": "e24522aa481af8de",
   "lastOpenFiles": [
+    "Notes/Semester 4/DCN Lab/Assignments/Assignment 7/output.pdf",
+    "Notes/Semester 4/DCN Lab/Assignments/Assignment 7/DMbookTOC.pdf",
+    "Notes/Semester 2/AEM2/Study Material/Advanced Modern Engineering Mathematics, 4th Edition (Glyn James, David Burley, Dick Clements etc.) (Z-Library).pdf",
+    "Notes/Semester 4/DCN Lab/Assignments/Assignment 7/1.jpeg",
+    "Notes/Semester 4/DCN Lab/Assignments/Assignment 7/Experiment 7.md",
+    "Notes/Semester 4/DCN Lab/Assignments/Assignment 7/4.png",
+    "Notes/Semester 4/DCN Lab/Assignments/Assignment 7/3.png",
+    "Notes/Semester 2/AEM2/Study Material/CC.pdf",
+    "Notes/Semester 4/DCN/Notes/Oof.md",
     "Notes/Semester 4/DCN/PrevYear/DCN 2019.pdf",
     "Notes/Semester 4/DCN/PrevYear/DCN 2023.pdf",
     "Notes/Semester 4/DCN/PrevYear/DCN2022.pdf",
     "Notes/Semester 4/DCN/PrevYear/DCN 2020.pdf",
     "Notes/Semester 4/DCN/PrevYear",
-    "Notes/Semester 4/DCN/Notes/Oof.md",
     "Notes/Semester 4/DCN/Notes/Drawing 2025-03-05 20.35.00.excalidraw.md",
     "Excalidraw",
     "Notes/Semester 4/DCN Lab/Assignment2_500125940.pdf",
-    "Notes/Semester 4/DCN Lab/Assignment2_500124827.pdf",
     "Notes/Semester 4/DCN Lab/Screenshot_20250201_222859.png",
-    "Notes/Semester 4/DCN Lab/Assignment 2.md.html",
     "Pasted image 20250201222415.png",
     "Pasted image 20250201221101.png",
     "Pasted image 20250201221059.png",
-    "Notes/Semester 4/DCN Lab/BitStuffing.py",
     "Notes/Semester 4/DCN Lab/Assignment 2.md",
-    "Notes/Semester 4/DCN Lab",
     "Notes/DAA/LabFile.md",
     "Notes/DAA/Assignment 1.md",
     "Notes/DAA/_index.md",
     "Notes/OS/WhatsApp Image 2024-10-16 at 23.33.46_b78731a7.jpg",
     "Notes/OS/WhatsApp Image 2024-10-16 at 23.33.46_5b2e5316.jpg",
     "Notes/OS/WhatsApp Image 2024-10-16 at 23.33.45_dc106d10.jpg",
-    "Notes/OS/WhatsApp Image 2024-10-16 at 23.33.45_3efd5698.jpg",
     "Untitled.md",
     "Untitled 1.md",
     "menu/index.md",
     "Untitled.canvas",
     "2024-12-09.md",
-    "Notes/sem2/Python/PythonSem2FinalProject/resources/snowball.png",
-    "Notes/sem2/Python/PythonSem2FinalProject/resources/tentacles-25x90.png",
     "Notes/sem2/Python/PythonSem2FinalProject/Readme2.md",
     "Notes/sem2/Python/PythonSem2FinalProject/README.md",
     "Notes/sem2/Python/Assignment Unit 5/Unit5AssignmentQuestions.md",
@@ -213,7 +210,6 @@
     "Notes/DBMS/Experiments/Experiment 11.md",
     "Notes/DBMS/Experiments/Experiment 12.md",
     "posts/Internships.md",
-    "posts/Anthropocene Mug.md",
-    "Authoring/The Olive Green Book/Untitled 1.md"
+    "posts/Anthropocene Mug.md"
   ]
 }
