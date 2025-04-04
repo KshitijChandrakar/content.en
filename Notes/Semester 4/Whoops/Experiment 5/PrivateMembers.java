@@ -1,3 +1,4 @@
+// Write a Java program to demonstrate that a private member of a superclass cannot be accessed directly from a derived class.
 class Parent {
     private int privateNumber = 42;
     public int getPrivateNumber() {

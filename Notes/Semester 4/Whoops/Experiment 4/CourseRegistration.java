@@ -6,10 +6,12 @@
 class Course{
   public String CourseName;
   public String CourseCode;
+
   public Course(String CourseName, String CourseCode){
     this.CourseName = CourseName;
     this.CourseCode = CourseCode;
   }
+
   public void displayDetails(){
     System.out.println("Course Name: " + this.CourseName);
     System.out.println("Course Code: " + this.CourseCode);
