@@ -1,13 +1,13 @@
 package Q;
 import p.A;
 
-public class B {
+public class B extends A{
     public static void main(String[] args) {
         A obj = new A();
 
         obj.publicMethod();
-
-        // obj.protectedMethod(); // B doesnt extend A so wont work
+        obj.GetterprivateMethod();
+        obj.protectedMethod(); // B doesnt extend A so wont work
 
         // obj.defaultMethod(); // B is not in the same package so wont work
 

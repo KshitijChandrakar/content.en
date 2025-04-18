@@ -16,4 +16,8 @@ public class A {
     private void privateMethod() {
         System.out.println("Private Method");
     }
+    public void GetterprivateMethod() {
+        System.out.println("Gets Private Method");
+        privateMethod();
+    }
 }

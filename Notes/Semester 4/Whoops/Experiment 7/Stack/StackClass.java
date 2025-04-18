@@ -67,11 +67,11 @@ class StackClass implements StackInterface {
         StackClass stack = new StackClass(size);
 
         while (true) {
-            System.out.println("\nStack Operations:\n");
-            System.out.println("1. Push\n");
-            System.out.println("2. Pop\n");
-            System.out.println("3. Display\n");
-            System.out.println("4. Exit\n");
+            System.out.println("\nStack Operations:");
+            System.out.println("1. Push");
+            System.out.println("2. Pop");
+            System.out.println("3. Display");
+            System.out.println("4. Exit");
             System.out.print("Enter your choice: ");
 
             int choice = scanner.nextInt();
@@ -93,7 +93,7 @@ class StackClass implements StackInterface {
                     scanner.close();
                     System.exit(0);
                 default:
-                    System.out.println("Invalid choice! Please try again.");
+                    System.out.println("Invalid choice!");
             }
         }
     }
