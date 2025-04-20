@@ -1,32 +1,34 @@
 # Load required libraries
+set.seed(1)
 library(tidyverse)
 library(caret)
-library(mlbench)
-library(corrplot)
 library(glmnet)
+library(mlbench)
+library(randomForest)
+# %%
 
 # Load Pima Indians Diabetes dataset
 data("PimaIndiansDiabetes2")
 df <- PimaIndiansDiabetes2
 
+# %%
+
 # Check structure & missing values
 glimpse(df)
 summary(df)
-
-# Remove rows with missing values (or impute if preferred)
 df <- na.omit(df)
+
 # %%
-# Scale numerical predictors (mean=0, sd=1)
 preProc <- preProcess(df[, -9], method = c("center", "scale"))
 df_scaled <- predict(preProc, df)
+
 # %%
-df_scaled <- df_scaled %>%
-  mutate(bmi_age_ratio = mass / age)  # BMI (mass) divided by age
+df_scaled <- df_scaled %>%  mutate(bmi_age_ratio = mass / age)
+
 # %%
 cor_matrix <- cor(df_scaled %>% select(-diabetes))
 corrplot(cor_matrix, method = "color", type = "upper", tl.cex = 0.7)
 # %%
-set.seed(123)
 ctrl <- rfeControl(functions = rfFuncs, method = "cv", number = 10)
 rfe_result <- rfe(
   x = df_scaled %>% select(-diabetes),
