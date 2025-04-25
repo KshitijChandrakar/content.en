@@ -266,9 +266,6 @@ INPUT main.aux
 INPUT ./titlepage.aux
 INPUT ./titlepage.aux
 INPUT titlepage.aux
-INPUT ./Index.aux
-INPUT ./Index.aux
-INPUT Index.aux
 OUTPUT main.aux
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/textcomp.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/textcomp.sty
@@ -308,276 +305,167 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 OUTPUT main.pdf
 INPUT /usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT ./Index.tex
-INPUT ./Index.tex
-OUTPUT Index.aux
-INPUT ./Index.tex
-INPUT ./Index.tex
-INPUT Index.tex
-INPUT Index.scsv
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
-INPUT ./Experiment 1/Experiment1.tex
-INPUT ./Experiment 1/Experiment1.tex
-INPUT ./Experiment 1/Experiment1.tex
-INPUT ./Experiment 1/Experiment1.tex
-INPUT Experiment 1/Experiment1.tex
-INPUT ./Experiment 1/Questions/DieFace.txt
-INPUT ./Experiment 1/Questions/DieFace.txt
-INPUT Experiment 1/Questions/DieFace.txt
-OUTPUT _FAD58DE7366495DB4650CFEFAC2FCD61.data.minted
-INPUT ./_FAD58DE7366495DB4650CFEFAC2FCD61.config.minted
-INPUT ./_FAD58DE7366495DB4650CFEFAC2FCD61.config.minted
-INPUT _FAD58DE7366495DB4650CFEFAC2FCD61.config.minted
-INPUT ./_minted/_FAD58DE7366495DB4650CFEFAC2FCD61.index.minted
-INPUT ./_minted/_FAD58DE7366495DB4650CFEFAC2FCD61.index.minted
-INPUT ./_minted/default.style.minted
-INPUT ./_minted/default.style.minted
-INPUT _minted/default.style.minted
-INPUT ./Experiment 1/Code/DieFace.R
-INPUT ./_minted/9919A0DE622A6F4539A0A868CF67B8E3.highlight.minted
-INPUT ./_minted/9919A0DE622A6F4539A0A868CF67B8E3.highlight.minted
-INPUT _minted/9919A0DE622A6F4539A0A868CF67B8E3.highlight.minted
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
-INPUT ./Experiment 1/screenshots/DieFace.png
-INPUT ./Experiment 1/screenshots/DieFace.png
-INPUT ./Experiment 1/screenshots/DieFace.png
-INPUT ./Experiment 1/screenshots/DieFace.png
-INPUT ./Experiment 1/screenshots/DieFace.png
-INPUT ./Experiment 1/Questions/TwoDice.txt
-INPUT ./Experiment 1/Questions/TwoDice.txt
-INPUT Experiment 1/Questions/TwoDice.txt
-INPUT ./Experiment 1/Code/TwoDice.R
-INPUT ./_minted/572BF9046DDC70EC63DEF25C4EDBAB27.highlight.minted
-INPUT ./_minted/572BF9046DDC70EC63DEF25C4EDBAB27.highlight.minted
-INPUT _minted/572BF9046DDC70EC63DEF25C4EDBAB27.highlight.minted
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmitt10.tfm
-INPUT ./Experiment 1/screenshots/TwoDice.png
-INPUT ./Experiment 1/screenshots/TwoDice.png
-INPUT ./Experiment 1/screenshots/TwoDice.png
-INPUT ./Experiment 1/screenshots/TwoDice.png
-INPUT ./Experiment 1/screenshots/TwoDice.png
-INPUT ./Experiment 1/Questions/UnionProbablity.txt
-INPUT ./Experiment 1/Questions/UnionProbablity.txt
-INPUT Experiment 1/Questions/UnionProbablity.txt
-INPUT ./Experiment 1/Code/UnionProbablity.R
-INPUT ./_minted/2139B002A04127B3234C3F7FA3E0607C.highlight.minted
-INPUT ./_minted/2139B002A04127B3234C3F7FA3E0607C.highlight.minted
-INPUT _minted/2139B002A04127B3234C3F7FA3E0607C.highlight.minted
-INPUT ./Experiment 1/screenshots/UnionProbablity.png
-INPUT ./Experiment 1/screenshots/UnionProbablity.png
-INPUT ./Experiment 1/screenshots/UnionProbablity.png
-INPUT ./Experiment 1/screenshots/UnionProbablity.png
-INPUT ./Experiment 1/screenshots/UnionProbablity.png
-INPUT ./Experiment 1/Questions/Disease.txt
-INPUT ./Experiment 1/Questions/Disease.txt
-INPUT Experiment 1/Questions/Disease.txt
-INPUT ./Experiment 1/Code/Disease.R
-INPUT ./_minted/D508417525162B70734F119FA1948E10.highlight.minted
-INPUT ./_minted/D508417525162B70734F119FA1948E10.highlight.minted
-INPUT _minted/D508417525162B70734F119FA1948E10.highlight.minted
-INPUT ./Experiment 1/screenshots/Disease.png
-INPUT ./Experiment 1/screenshots/Disease.png
-INPUT ./Experiment 1/screenshots/Disease.png
-INPUT ./Experiment 1/screenshots/Disease.png
-INPUT ./Experiment 1/screenshots/Disease.png
-INPUT ./Experiment 1/Questions/nDice.txt
-INPUT ./Experiment 1/Questions/nDice.txt
-INPUT Experiment 1/Questions/nDice.txt
-INPUT ./Experiment 1/Code/nDice.R
-INPUT ./_minted/84319390E5826E7EFD76EE84C846CF4B.highlight.minted
-INPUT ./_minted/84319390E5826E7EFD76EE84C846CF4B.highlight.minted
-INPUT _minted/84319390E5826E7EFD76EE84C846CF4B.highlight.minted
-INPUT ./Experiment 1/screenshots/nDice.png
-INPUT ./Experiment 1/screenshots/nDice.png
-INPUT ./Experiment 1/screenshots/nDice.png
-INPUT ./Experiment 1/screenshots/nDice.png
-INPUT ./Experiment 1/screenshots/nDice.png
-INPUT ./Experiment 1/Questions/RandomPlot.txt
-INPUT ./Experiment 1/Questions/RandomPlot.txt
-INPUT Experiment 1/Questions/RandomPlot.txt
-INPUT ./Experiment 1/Code/RandomPlot.R
-INPUT ./_minted/38FD1714D3F279554ADBE10179DB183A.highlight.minted
-INPUT ./_minted/38FD1714D3F279554ADBE10179DB183A.highlight.minted
-INPUT _minted/38FD1714D3F279554ADBE10179DB183A.highlight.minted
-INPUT ./Experiment 1/screenshots/RandomPlot.png
-INPUT ./Experiment 1/screenshots/RandomPlot.png
-INPUT ./Experiment 1/screenshots/RandomPlot.png
-INPUT ./Experiment 1/screenshots/RandomPlot.png
-INPUT ./Experiment 1/screenshots/RandomPlot.png
-INPUT ./Experiment 1/Questions/ExpectedValue.txt
-INPUT ./Experiment 1/Questions/ExpectedValue.txt
-INPUT Experiment 1/Questions/ExpectedValue.txt
-INPUT ./Experiment 1/Code/ExpectedValue.R
-INPUT ./_minted/9CBA43A230CEEB1665869369C51579E3.highlight.minted
-INPUT ./_minted/9CBA43A230CEEB1665869369C51579E3.highlight.minted
-INPUT _minted/9CBA43A230CEEB1665869369C51579E3.highlight.minted
-INPUT ./Experiment 1/screenshots/ExpectedValue.png
-INPUT ./Experiment 1/screenshots/ExpectedValue.png
-INPUT ./Experiment 1/screenshots/ExpectedValue.png
-INPUT ./Experiment 1/screenshots/ExpectedValue.png
-INPUT ./Experiment 1/screenshots/ExpectedValue.png
-INPUT ./Experiment 1/Questions/Poisson.txt
-INPUT ./Experiment 1/Questions/Poisson.txt
-INPUT Experiment 1/Questions/Poisson.txt
-INPUT ./Experiment 1/Code/Poisson.R
-INPUT ./_minted/5C5D017D430655FAE7FD9C5358E199D8.highlight.minted
-INPUT ./_minted/5C5D017D430655FAE7FD9C5358E199D8.highlight.minted
-INPUT _minted/5C5D017D430655FAE7FD9C5358E199D8.highlight.minted
-INPUT ./Experiment 1/screenshots/Poisson.png
-INPUT ./Experiment 1/screenshots/Poisson.png
-INPUT ./Experiment 1/screenshots/Poisson.png
-INPUT ./Experiment 1/screenshots/Poisson.png
-INPUT ./Experiment 1/screenshots/Poisson.png
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 2/Experiment2.pdf
-INPUT ./Experiment 3/Experiment3.tex
-INPUT ./Experiment 3/Experiment3.tex
-INPUT ./Experiment 3/Experiment3.tex
-INPUT ./Experiment 3/Experiment3.tex
-INPUT Experiment 3/Experiment3.tex
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q1.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q2.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q3.pdf
-INPUT ./Experiment 3/Tex/Q4.pdf
-INPUT ./Experiment 3/Tex/Q4.pdf
-INPUT ./Experiment 3/Tex/Q4.pdf
-INPUT ./Experiment 3/Tex/Q4.pdf
-INPUT ./Experiment 3/Tex/Q4.pdf
-INPUT ./Experiment 3/Tex/Q4.pdf
-INPUT ./Experiment 3/Tex/Q4.pdf
-INPUT ./Experiment 3/Tex/Q4.pdf
-INPUT ./Experiment 3/Tex/Q4.pdf
-INPUT ./Experiment 3/Tex/Q4.pdf
-INPUT ./Experiment 3/Tex/Q4.pdf
-INPUT ./Experiment 3/Tex/Q4.pdf
-INPUT ./Experiment 3/Tex/Q4.pdf
-INPUT ./Experiment 3/Tex/Q4.pdf
-INPUT ./Experiment 3/Tex/Q4.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise1.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise2.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 6/Excercise3.pdf
+INPUT ./Experiment 7/Experiment 7.pdf
+INPUT ./Experiment 7/Experiment 7.pdf
+INPUT ./Experiment 7/Experiment 7.pdf
+INPUT ./Experiment 7/Experiment 7.pdf
+INPUT ./Experiment 7/Experiment 7.pdf
+INPUT ./Experiment 7/Experiment 7.pdf
+INPUT ./Experiment 7/Experiment 7.pdf
+INPUT ./Experiment 7/Experiment 7.pdf
+INPUT ./Experiment 7/Experiment 7.pdf
+INPUT ./Experiment 7/Experiment 7.pdf
+INPUT ./Experiment 7/Experiment 7.pdf
+INPUT ./Experiment 7/Experiment 7.pdf
+INPUT ./Experiment 7/Experiment 7.pdf
+INPUT ./Experiment 7/Experiment 7.pdf
+INPUT ./Experiment 7/Experiment 7.pdf
+INPUT ./Experiment 8/Experiment 8.pdf
+INPUT ./Experiment 8/Experiment 8.pdf
+INPUT ./Experiment 8/Experiment 8.pdf
+INPUT ./Experiment 8/Experiment 8.pdf
+INPUT ./Experiment 8/Experiment 8.pdf
+INPUT ./Experiment 8/Experiment 8.pdf
+INPUT ./Experiment 8/Experiment 8.pdf
+INPUT ./Experiment 8/Experiment 8.pdf
+INPUT ./Experiment 8/Experiment 8.pdf
+INPUT ./Experiment 8/Experiment 8.pdf
+INPUT ./Experiment 8/Experiment 8.pdf
+INPUT ./Experiment 8/Experiment 8.pdf
+INPUT ./Experiment 8/Experiment 8.pdf
+INPUT ./Experiment 8/Experiment 8.pdf
+INPUT ./Experiment 8/Experiment 8.pdf
+INPUT ./Experiment 8/Experiment 8.pdf
+INPUT ./Experiment 8/Experiment 8.pdf
+INPUT ./Experiment 8/Experiment 8.pdf
+INPUT ./Experiment 8/Experiment 8.pdf
 INPUT main.aux
 INPUT ./titlepage.aux
 INPUT ./titlepage.aux
 INPUT titlepage.aux
-INPUT ./Index.aux
-INPUT ./Index.aux
-INPUT Index.aux
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfit1200.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfit1095.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb

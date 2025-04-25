@@ -1,0 +1,6 @@
+PWD /home/asus/content/Notes/Semester 4/FDN Lab/Experiments/Experiment 6
+INPUT /usr/local/texlive/2024/texmf.cnf
+INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT Experiment3.tex
+OUTPUT Experiment3.log

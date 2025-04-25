@@ -1,0 +1,776 @@
+\documentclass[11pt]{article}
+
+    \usepackage[breakable]{tcolorbox}
+    \usepackage{parskip} % Stop auto-indenting (to mimic markdown behaviour)
+
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % Keep aspect ratio if custom image width or height is specified
+    \setkeys{Gin}{keepaspectratio}
+    % Maintain compatibility with old templates. Remove in nbconvert 6.0
+    \let\Oldincludegraphics\includegraphics
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionFormat{nocaption}{}
+    \captionsetup{format=nocaption,aboveskip=0pt,belowskip=0pt}
+
+    \usepackage{float}
+    \floatplacement{figure}{H} % forces figures to be placed at the correct location
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+
+    \usepackage{iftex}
+    \ifPDFTeX
+        \usepackage[T1]{fontenc}
+        \IfFileExists{alphabeta.sty}{
+              \usepackage{alphabeta}
+          }{
+              \usepackage[mathletters]{ucs}
+              \usepackage[utf8x]{inputenc}
+          }
+    \else
+        \usepackage{fontspec}
+        \usepackage{unicode-math}
+    \fi
+
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics
+                         % to support a larger range
+    \makeatletter % fix for old versions of grffile with XeLaTeX
+    \@ifpackagelater{grffile}{2019/11/01}
+    {
+      % Do nothing on new versions
+    }
+    {
+      \def\Gread@@xetex#1{%
+        \IfFileExists{"\Gin@base".bb}%
+        {\Gread@eps{\Gin@base.bb}}%
+        {\Gread@@xetex@aux#1}%
+      }
+    }
+    \makeatother
+    \usepackage[Export]{adjustbox} % Used to constrain images to a maximum size
+    \adjustboxset{max size={0.9\linewidth}{0.9\paperheight}}
+
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    % The default LaTeX title has an obnoxious amount of whitespace. By default,
+    % titling removes some of it. It also provides customization options.
+    \usepackage{titling}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage{array}     % table support for pandoc >= 2.11.3
+    \usepackage{calc}      % table minipage width calculation for pandoc >= 2.11.1
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    \usepackage{soul}      % strikethrough (\st) support for pandoc >= 3.0.0
+    \usepackage{mathrsfs}
+
+
+
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+    \definecolor{ansi-default-inverse-fg}{HTML}{FFFFFF}
+    \definecolor{ansi-default-inverse-bg}{HTML}{000000}
+
+    % common color for the border for error outputs.
+    \definecolor{outerrorbackground}{HTML}{FFDFDF}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \makeatletter
+    \newsavebox\pandoc@box
+    \newcommand*\pandocbounded[1]{%
+      \sbox\pandoc@box{#1}%
+      % scaling factors for width and height
+      \Gscale@div\@tempa\textheight{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+      \Gscale@div\@tempb\linewidth{\wd\pandoc@box}%
+      % select the smaller of both
+      \ifdim\@tempb\p@<\@tempa\p@
+        \let\@tempa\@tempb
+      \fi
+      % scaling accordingly (\@tempa < 1)
+      \ifdim\@tempa\p@<\p@
+        \scalebox{\@tempa}{\usebox\pandoc@box}%
+      % scaling not needed, use as it is
+      \else
+        \usebox{\pandoc@box}%
+      \fi
+    }
+    \makeatother
+
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatibility definitions
+    \def\gt{>}
+    \def\lt{<}
+    \let\Oldtex\TeX
+    \let\Oldlatex\LaTeX
+    \renewcommand{\TeX}{\textrm{\Oldtex}}
+    \renewcommand{\LaTeX}{\textrm{\Oldlatex}}
+    % Document parameters
+    % Document title
+    \title{Excercise2}
+
+
+
+
+
+
+
+% Pygments definitions
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\@namedef{PY@tok@w}{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\@namedef{PY@tok@c}{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.24,0.48,0.48}{##1}}}
+\@namedef{PY@tok@cp}{\def\PY@tc##1{\textcolor[rgb]{0.61,0.40,0.00}{##1}}}
+\@namedef{PY@tok@k}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PY@tok@kp}{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PY@tok@kt}{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\@namedef{PY@tok@o}{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PY@tok@ow}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\@namedef{PY@tok@nb}{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PY@tok@nf}{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\@namedef{PY@tok@nc}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\@namedef{PY@tok@nn}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\@namedef{PY@tok@ne}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.80,0.25,0.22}{##1}}}
+\@namedef{PY@tok@nv}{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\@namedef{PY@tok@no}{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\@namedef{PY@tok@nl}{\def\PY@tc##1{\textcolor[rgb]{0.46,0.46,0.00}{##1}}}
+\@namedef{PY@tok@ni}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.44,0.44,0.44}{##1}}}
+\@namedef{PY@tok@na}{\def\PY@tc##1{\textcolor[rgb]{0.41,0.47,0.13}{##1}}}
+\@namedef{PY@tok@nt}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PY@tok@nd}{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\@namedef{PY@tok@s}{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PY@tok@sd}{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PY@tok@si}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.64,0.35,0.47}{##1}}}
+\@namedef{PY@tok@se}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.36,0.12}{##1}}}
+\@namedef{PY@tok@sr}{\def\PY@tc##1{\textcolor[rgb]{0.64,0.35,0.47}{##1}}}
+\@namedef{PY@tok@ss}{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\@namedef{PY@tok@sx}{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PY@tok@m}{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PY@tok@gh}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\@namedef{PY@tok@gu}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\@namedef{PY@tok@gd}{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\@namedef{PY@tok@gi}{\def\PY@tc##1{\textcolor[rgb]{0.00,0.52,0.00}{##1}}}
+\@namedef{PY@tok@gr}{\def\PY@tc##1{\textcolor[rgb]{0.89,0.00,0.00}{##1}}}
+\@namedef{PY@tok@ge}{\let\PY@it=\textit}
+\@namedef{PY@tok@gs}{\let\PY@bf=\textbf}
+\@namedef{PY@tok@ges}{\let\PY@bf=\textbf\let\PY@it=\textit}
+\@namedef{PY@tok@gp}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\@namedef{PY@tok@go}{\def\PY@tc##1{\textcolor[rgb]{0.44,0.44,0.44}{##1}}}
+\@namedef{PY@tok@gt}{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\@namedef{PY@tok@err}{\def\PY@bc##1{{\setlength{\fboxsep}{\string -\fboxrule}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}}
+\@namedef{PY@tok@kc}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PY@tok@kd}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PY@tok@kn}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PY@tok@kr}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PY@tok@bp}{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PY@tok@fm}{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\@namedef{PY@tok@vc}{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\@namedef{PY@tok@vg}{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\@namedef{PY@tok@vi}{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\@namedef{PY@tok@vm}{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\@namedef{PY@tok@sa}{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PY@tok@sb}{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PY@tok@sc}{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PY@tok@dl}{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PY@tok@s2}{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PY@tok@sh}{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PY@tok@s1}{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PY@tok@mb}{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PY@tok@mf}{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PY@tok@mh}{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PY@tok@mi}{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PY@tok@il}{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PY@tok@mo}{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PY@tok@ch}{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.24,0.48,0.48}{##1}}}
+\@namedef{PY@tok@cm}{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.24,0.48,0.48}{##1}}}
+\@namedef{PY@tok@cpf}{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.24,0.48,0.48}{##1}}}
+\@namedef{PY@tok@c1}{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.24,0.48,0.48}{##1}}}
+\@namedef{PY@tok@cs}{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.24,0.48,0.48}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % For linebreaks inside Verbatim environment from package fancyvrb.
+    \makeatletter
+        \newbox\Wrappedcontinuationbox
+        \newbox\Wrappedvisiblespacebox
+        \newcommand*\Wrappedvisiblespace {\textcolor{red}{\textvisiblespace}}
+        \newcommand*\Wrappedcontinuationsymbol {\textcolor{red}{\llap{\tiny$\m@th\hookrightarrow$}}}
+        \newcommand*\Wrappedcontinuationindent {3ex }
+        \newcommand*\Wrappedafterbreak {\kern\Wrappedcontinuationindent\copy\Wrappedcontinuationbox}
+        % Take advantage of the already applied Pygments mark-up to insert
+        % potential linebreaks for TeX processing.
+        %        {, <, #, %, $, ' and ": go to next line.
+        %        _, }, ^, &, >, - and ~: stay at end of broken line.
+        % Use of \textquotesingle for straight quote.
+        \newcommand*\Wrappedbreaksatspecials {%
+            \def\PYGZus{\discretionary{\char`\_}{\Wrappedafterbreak}{\char`\_}}%
+            \def\PYGZob{\discretionary{}{\Wrappedafterbreak\char`\{}{\char`\{}}%
+            \def\PYGZcb{\discretionary{\char`\}}{\Wrappedafterbreak}{\char`\}}}%
+            \def\PYGZca{\discretionary{\char`\^}{\Wrappedafterbreak}{\char`\^}}%
+            \def\PYGZam{\discretionary{\char`\&}{\Wrappedafterbreak}{\char`\&}}%
+            \def\PYGZlt{\discretionary{}{\Wrappedafterbreak\char`\<}{\char`\<}}%
+            \def\PYGZgt{\discretionary{\char`\>}{\Wrappedafterbreak}{\char`\>}}%
+            \def\PYGZsh{\discretionary{}{\Wrappedafterbreak\char`\#}{\char`\#}}%
+            \def\PYGZpc{\discretionary{}{\Wrappedafterbreak\char`\%}{\char`\%}}%
+            \def\PYGZdl{\discretionary{}{\Wrappedafterbreak\char`\$}{\char`\$}}%
+            \def\PYGZhy{\discretionary{\char`\-}{\Wrappedafterbreak}{\char`\-}}%
+            \def\PYGZsq{\discretionary{}{\Wrappedafterbreak\textquotesingle}{\textquotesingle}}%
+            \def\PYGZdq{\discretionary{}{\Wrappedafterbreak\char`\"}{\char`\"}}%
+            \def\PYGZti{\discretionary{\char`\~}{\Wrappedafterbreak}{\char`\~}}%
+        }
+        % Some characters . , ; ? ! / are not pygmentized.
+        % This macro makes them "active" and they will insert potential linebreaks
+        \newcommand*\Wrappedbreaksatpunct {%
+            \lccode`\~`\.\lowercase{\def~}{\discretionary{\hbox{\char`\.}}{\Wrappedafterbreak}{\hbox{\char`\.}}}%
+            \lccode`\~`\,\lowercase{\def~}{\discretionary{\hbox{\char`\,}}{\Wrappedafterbreak}{\hbox{\char`\,}}}%
+            \lccode`\~`\;\lowercase{\def~}{\discretionary{\hbox{\char`\;}}{\Wrappedafterbreak}{\hbox{\char`\;}}}%
+            \lccode`\~`\:\lowercase{\def~}{\discretionary{\hbox{\char`\:}}{\Wrappedafterbreak}{\hbox{\char`\:}}}%
+            \lccode`\~`\?\lowercase{\def~}{\discretionary{\hbox{\char`\?}}{\Wrappedafterbreak}{\hbox{\char`\?}}}%
+            \lccode`\~`\!\lowercase{\def~}{\discretionary{\hbox{\char`\!}}{\Wrappedafterbreak}{\hbox{\char`\!}}}%
+            \lccode`\~`\/\lowercase{\def~}{\discretionary{\hbox{\char`\/}}{\Wrappedafterbreak}{\hbox{\char`\/}}}%
+            \catcode`\.\active
+            \catcode`\,\active
+            \catcode`\;\active
+            \catcode`\:\active
+            \catcode`\?\active
+            \catcode`\!\active
+            \catcode`\/\active
+            \lccode`\~`\~
+        }
+    \makeatother
+
+    \let\OriginalVerbatim=\Verbatim
+    \makeatletter
+    \renewcommand{\Verbatim}[1][1]{%
+        %\parskip\z@skip
+        \sbox\Wrappedcontinuationbox {\Wrappedcontinuationsymbol}%
+        \sbox\Wrappedvisiblespacebox {\FV@SetupFont\Wrappedvisiblespace}%
+        \def\FancyVerbFormatLine ##1{\hsize\linewidth
+            \vtop{\raggedright\hyphenpenalty\z@\exhyphenpenalty\z@
+                \doublehyphendemerits\z@\finalhyphendemerits\z@
+                \strut ##1\strut}%
+        }%
+        % If the linebreak is at a space, the latter will be displayed as visible
+        % space at end of first line, and a continuation symbol starts next line.
+        % Stretch/shrink are however usually zero for typewriter font.
+        \def\FV@Space {%
+            \nobreak\hskip\z@ plus\fontdimen3\font minus\fontdimen4\font
+            \discretionary{\copy\Wrappedvisiblespacebox}{\Wrappedafterbreak}
+            {\kern\fontdimen2\font}%
+        }%
+
+        % Allow breaks at special characters using \PYG... macros.
+        \Wrappedbreaksatspecials
+        % Breaks at punctuation characters . , ; ? ! and / need catcode=\active
+        \OriginalVerbatim[#1,codes*=\Wrappedbreaksatpunct]%
+    }
+    \makeatother
+
+    % Exact colors from NB
+    \definecolor{incolor}{HTML}{303F9F}
+    \definecolor{outcolor}{HTML}{D84315}
+    \definecolor{cellborder}{HTML}{CFCFCF}
+    \definecolor{cellbackground}{HTML}{F7F7F7}
+
+    % prompt
+    \makeatletter
+    \newcommand{\boxspacing}{\kern\kvtcb@left@rule\kern\kvtcb@boxsep}
+    \makeatother
+    \newcommand{\prompt}[4]{
+        {\ttfamily\llap{{\color{#2}[#3]:\hspace{3pt}#4}}\vspace{-\baselineskip}}
+    }
+
+
+
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+
+
+
+\begin{document}
+
+    \maketitle
+
+
+
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{8}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n+nf}{library}\PY{p}{(}\PY{n}{tidyverse}\PY{p}{)}
+\PY{n+nf}{library}\PY{p}{(}\PY{n}{cluster}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{9}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n+nf}{set.seed}\PY{p}{(}\PY{l+m}{1}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{10}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{happiness}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{n+nf}{read\PYZus{}csv}\PY{p}{(}\PY{l+s}{\PYZdq{}}\PY{l+s}{/home/asus/content/Notes/Semester 4/FDN Lab/Experiments/Experiment 6/archive(11)/2019.csv\PYZdq{}}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+\textbf{Rows: }\textcolor{ansi-blue}{156} \textbf{Columns: }\textcolor{ansi-blue}{9}
+\textcolor{ansi-cyan}{──} \textbf{Column specification} \textcolor{ansi-cyan}{────────────────────────────────
+────────────────────────────────────────────────────────────────────────────────
+────────────────────────────────}
+\textbf{Delimiter:} ","
+\textcolor{ansi-red}{chr} (1): Country
+\textcolor{ansi-green}{dbl} (8): Overall rank, Score, GDP per capita, Social support, Healthy
+life e{\ldots}
+
+\textcolor{ansi-cyan}{ℹ} Use `spec()` to retrieve the full column specification for this
+data.
+\textcolor{ansi-cyan}{ℹ} Specify the column types or set `show\_col\_types = FALSE` to quiet
+this message.
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{11}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n+nf}{head}\PY{p}{(}\PY{n}{happiness}\PY{p}{)}
+\PY{n+nf}{summary}\PY{p}{(}\PY{n}{happiness}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    A tibble: 6 × 9
+\begin{tabular}{lllllllll}
+ Overall rank & Country & Score & GDP per capita & Social support & Healthy life expectancy & Freedom to make life choices & Generosity & Perceptions of corruption\\
+ <dbl> & <chr> & <dbl> & <dbl> & <dbl> & <dbl> & <dbl> & <dbl> & <dbl>\\
+\hline
+	 1 & Finland     & 7.769 & 1.340 & 1.587 & 0.986 & 0.596 & 0.153 & 0.393\\
+	 2 & Denmark     & 7.600 & 1.383 & 1.573 & 0.996 & 0.592 & 0.252 & 0.410\\
+	 3 & Norway      & 7.554 & 1.488 & 1.582 & 1.028 & 0.603 & 0.271 & 0.341\\
+	 4 & Iceland     & 7.494 & 1.380 & 1.624 & 1.026 & 0.591 & 0.354 & 0.118\\
+	 5 & Netherlands & 7.488 & 1.396 & 1.522 & 0.999 & 0.557 & 0.322 & 0.298\\
+	 6 & Switzerland & 7.480 & 1.452 & 1.526 & 1.052 & 0.572 & 0.263 & 0.343\\
+\end{tabular}
+
+
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+  Overall rank      Country              Score       GDP per capita
+ Min.   :  1.00   Length:156         Min.   :2.853   Min.   :0.0000
+ 1st Qu.: 39.75   Class :character   1st Qu.:4.545   1st Qu.:0.6028
+ Median : 78.50   Mode  :character   Median :5.380   Median :0.9600
+ Mean   : 78.50                      Mean   :5.407   Mean   :0.9051
+ 3rd Qu.:117.25                      3rd Qu.:6.184   3rd Qu.:1.2325
+ Max.   :156.00                      Max.   :7.769   Max.   :1.6840
+ Social support  Healthy life expectancy Freedom to make life choices
+ Min.   :0.000   Min.   :0.0000          Min.   :0.0000
+ 1st Qu.:1.056   1st Qu.:0.5477          1st Qu.:0.3080
+ Median :1.272   Median :0.7890          Median :0.4170
+ Mean   :1.209   Mean   :0.7252          Mean   :0.3926
+ 3rd Qu.:1.452   3rd Qu.:0.8818          3rd Qu.:0.5072
+ Max.   :1.624   Max.   :1.1410          Max.   :0.6310
+   Generosity     Perceptions of corruption
+ Min.   :0.0000   Min.   :0.0000
+ 1st Qu.:0.1087   1st Qu.:0.0470
+ Median :0.1775   Median :0.0855
+ Mean   :0.1848   Mean   :0.1106
+ 3rd Qu.:0.2482   3rd Qu.:0.1412
+ Max.   :0.5660   Max.   :0.4530
+    \end{Verbatim}
+
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{12}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} Filtering out the text cols}
+\PY{n}{features}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{n+nf}{c}\PY{p}{(}\PY{l+s}{\PYZdq{}}\PY{l+s}{Overall rank\PYZdq{}}\PY{p}{,}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Score\PYZdq{}}\PY{p}{,}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{GDP per capita\PYZdq{}}\PY{p}{,}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Social support\PYZdq{}}\PY{p}{,}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Healthy life expectancy\PYZdq{}}\PY{p}{,}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Freedom to make life choices\PYZdq{}}\PY{p}{,}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Generosity\PYZdq{}}\PY{p}{,}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Perceptions of corruption\PYZdq{}}\PY{p}{)}
+
+\PY{n}{happiness}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{n}{happiness}\PY{+w}{ }\PY{o}{\PYZpc{}\PYZgt{}\PYZpc{}}
+\PY{+w}{  }\PY{n+nf}{select}\PY{p}{(}\PY{n+nf}{all\PYZus{}of}\PY{p}{(}\PY{n}{features}\PY{p}{)}\PY{p}{)}\PY{+w}{ }\PY{o}{\PYZpc{}\PYZgt{}\PYZpc{}}
+\PY{+w}{  }\PY{n+nf}{na.omit}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{13}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{features}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{n+nf}{c}\PY{p}{(}\PY{l+s}{\PYZdq{}}\PY{l+s}{Overall rank\PYZdq{}}\PY{p}{,}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Score\PYZdq{}}\PY{p}{,}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{GDP per capita\PYZdq{}}\PY{p}{,}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Social support\PYZdq{}}\PY{p}{,}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Healthy life expectancy\PYZdq{}}\PY{p}{,}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Freedom to make life choices\PYZdq{}}\PY{p}{,}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Generosity\PYZdq{}}\PY{p}{,}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Perceptions of corruption\PYZdq{}}\PY{p}{)}
+
+\PY{n}{happiness\PYZus{}country}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{n}{happiness}\PY{+w}{ }\PY{o}{\PYZpc{}\PYZgt{}\PYZpc{}}
+\PY{+w}{  }\PY{n+nf}{select}\PY{p}{(}\PY{n+nf}{all\PYZus{}of}\PY{p}{(}\PY{n}{features}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{14}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}SCAAAAAAAAAAAAAAAALIng}
+\PY{n}{happiness\PYZus{}scaled}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{n+nf}{scale}\PY{p}{(}\PY{n}{happiness}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{15}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} total within\PYZhy{}cluster sum of squares}
+\PY{n}{wss}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{k+kr}{function}\PY{p}{(}\PY{n}{k}\PY{p}{)}\PY{+w}{ }\PY{p}{\PYZob{}}
+\PY{+w}{  }\PY{n+nf}{kmeans}\PY{p}{(}\PY{n}{happiness\PYZus{}scaled}\PY{p}{,}\PY{+w}{ }\PY{n}{k}\PY{p}{,}\PY{+w}{ }\PY{n}{nstart}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+m}{10}\PY{p}{)}\PY{o}{\PYZdl{}}\PY{n}{tot.withinss}
+\PY{p}{\PYZcb{}}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{16}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{k\PYZus{}values}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{l+m}{1}\PY{o}{:}\PY{l+m}{10}
+\PY{n}{wss\PYZus{}values}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{n+nf}{map\PYZus{}dbl}\PY{p}{(}\PY{n}{k\PYZus{}values}\PY{p}{,}\PY{+w}{ }\PY{n}{wss}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{17}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n+nf}{ggplot}\PY{p}{(}\PY{n+nf}{data.frame}\PY{p}{(}\PY{n}{k}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n}{k\PYZus{}values}\PY{p}{,}\PY{+w}{ }\PY{n}{wss}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n}{wss\PYZus{}values}\PY{p}{)}\PY{p}{,}\PY{+w}{ }\PY{n+nf}{aes}\PY{p}{(}\PY{n}{k}\PY{p}{,}\PY{+w}{ }\PY{n}{wss}\PY{p}{)}\PY{p}{)}\PY{+w}{ }\PY{o}{+}
+\PY{+w}{  }\PY{n+nf}{geom\PYZus{}line}\PY{p}{(}\PY{p}{)}\PY{+w}{ }\PY{o}{+}\PY{+w}{ }\PY{n+nf}{geom\PYZus{}point}\PY{p}{(}\PY{p}{)}\PY{+w}{ }\PY{o}{+}
+\PY{+w}{  }\PY{n+nf}{scale\PYZus{}x\PYZus{}continuous}\PY{p}{(}\PY{n}{breaks}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n}{k\PYZus{}values}\PY{p}{)}\PY{+w}{ }\PY{o}{+}
+\PY{+w}{  }\PY{n+nf}{labs}\PY{p}{(}\PY{n}{title}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Elbow Method for Optimal Number of Clusters\PYZdq{}}\PY{p}{,}
+\PY{+w}{       }\PY{n}{x}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Number of clusters K\PYZdq{}}\PY{p}{,}
+\PY{+w}{       }\PY{n}{y}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Total within\PYZhy{}cluster sum of squares\PYZdq{}}\PY{p}{)}\PY{+w}{ }\PY{o}{+}
+\PY{+w}{  }\PY{n+nf}{theme\PYZus{}minimal}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_9_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{18}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{avg\PYZus{}sil}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{k+kr}{function}\PY{p}{(}\PY{n}{k}\PY{p}{)}\PY{+w}{ }\PY{p}{\PYZob{}}
+\PY{+w}{  }\PY{n}{km.res}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{n+nf}{kmeans}\PY{p}{(}\PY{n}{happiness\PYZus{}scaled}\PY{p}{,}\PY{+w}{ }\PY{n}{centers}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n}{k}\PY{p}{,}\PY{+w}{ }\PY{n}{nstart}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+m}{25}\PY{p}{)}
+\PY{+w}{  }\PY{n}{ss}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{n+nf}{silhouette}\PY{p}{(}\PY{n}{km.res}\PY{o}{\PYZdl{}}\PY{n}{cluster}\PY{p}{,}\PY{+w}{ }\PY{n+nf}{dist}\PY{p}{(}\PY{n}{happiness\PYZus{}scaled}\PY{p}{)}\PY{p}{)}
+\PY{+w}{  }\PY{n+nf}{mean}\PY{p}{(}\PY{n}{ss}\PY{p}{[}\PY{p}{,}\PY{+w}{ }\PY{l+m}{3}\PY{p}{]}\PY{p}{)}
+\PY{p}{\PYZcb{}}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{19}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{k\PYZus{}values}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{l+m}{2}\PY{o}{:}\PY{l+m}{10}
+\PY{n}{avg\PYZus{}sil\PYZus{}values}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{n+nf}{map\PYZus{}dbl}\PY{p}{(}\PY{n}{k\PYZus{}values}\PY{p}{,}\PY{+w}{ }\PY{n}{avg\PYZus{}sil}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{20}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n+nf}{ggplot}\PY{p}{(}\PY{n+nf}{data.frame}\PY{p}{(}\PY{n}{k}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n}{k\PYZus{}values}\PY{p}{,}\PY{+w}{ }\PY{n}{silhouette}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n}{avg\PYZus{}sil\PYZus{}values}\PY{p}{)}\PY{p}{,}\PY{+w}{ }\PY{n+nf}{aes}\PY{p}{(}\PY{n}{k}\PY{p}{,}\PY{+w}{ }\PY{n}{silhouette}\PY{p}{)}\PY{p}{)}\PY{+w}{ }\PY{o}{+}
+\PY{+w}{  }\PY{n+nf}{geom\PYZus{}line}\PY{p}{(}\PY{p}{)}\PY{+w}{ }\PY{o}{+}\PY{+w}{ }\PY{n+nf}{geom\PYZus{}point}\PY{p}{(}\PY{p}{)}\PY{+w}{ }\PY{o}{+}
+\PY{+w}{  }\PY{n+nf}{scale\PYZus{}x\PYZus{}continuous}\PY{p}{(}\PY{n}{breaks}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n}{k\PYZus{}values}\PY{p}{)}\PY{+w}{ }\PY{o}{+}
+\PY{+w}{  }\PY{n+nf}{labs}\PY{p}{(}\PY{n}{title}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Silhouette Method for Optimal Number of Clusters\PYZdq{}}\PY{p}{,}
+\PY{+w}{       }\PY{n}{x}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Number of clusters K\PYZdq{}}\PY{p}{,}
+\PY{+w}{       }\PY{n}{y}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Average Silhouette Width\PYZdq{}}\PY{p}{)}\PY{+w}{ }\PY{o}{+}
+\PY{+w}{  }\PY{n+nf}{theme\PYZus{}minimal}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_12_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{21}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{optimal\PYZus{}k}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{l+m}{5}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{22}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{kmeans\PYZus{}result}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{n+nf}{kmeans}\PY{p}{(}\PY{n}{happiness\PYZus{}scaled}\PY{p}{,}\PY{+w}{ }\PY{n}{centers}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n}{optimal\PYZus{}k}\PY{p}{,}\PY{+w}{ }\PY{n}{nstart}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+m}{25}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{23}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} Add cluster assignments to original data}
+\PY{n}{happiness}\PY{o}{\PYZdl{}}\PY{n}{Cluster}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{n+nf}{as.factor}\PY{p}{(}\PY{n}{kmeans\PYZus{}result}\PY{o}{\PYZdl{}}\PY{n}{cluster}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{24}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} Perform PCA for visualization}
+\PY{n}{pca\PYZus{}result}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{n+nf}{prcomp}\PY{p}{(}\PY{n}{happiness\PYZus{}scaled}\PY{p}{,}\PY{+w}{ }\PY{n}{scale.}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{k+kc}{TRUE}\PY{p}{)}
+\PY{n}{pca\PYZus{}df}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{n+nf}{as.data.frame}\PY{p}{(}\PY{n}{pca\PYZus{}result}\PY{o}{\PYZdl{}}\PY{n}{x}\PY{p}{[}\PY{p}{,}\PY{+w}{ }\PY{l+m}{1}\PY{o}{:}\PY{l+m}{2}\PY{p}{]}\PY{p}{)}
+\PY{n}{pca\PYZus{}df}\PY{o}{\PYZdl{}}\PY{n}{Cluster}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{n}{happiness}\PY{o}{\PYZdl{}}\PY{n}{Cluster}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{25}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} Plot clusters in PCA space}
+\PY{n+nf}{ggplot}\PY{p}{(}\PY{n}{pca\PYZus{}df}\PY{p}{,}\PY{+w}{ }\PY{n+nf}{aes}\PY{p}{(}\PY{n}{x}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n}{PC1}\PY{p}{,}\PY{+w}{ }\PY{n}{y}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n}{PC2}\PY{p}{,}\PY{+w}{ }\PY{n}{color}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n}{Cluster}\PY{p}{)}\PY{p}{)}\PY{+w}{ }\PY{o}{+}
+\PY{+w}{  }\PY{n+nf}{geom\PYZus{}point}\PY{p}{(}\PY{n}{size}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+m}{3}\PY{p}{,}\PY{+w}{ }\PY{n}{alpha}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+m}{0.7}\PY{p}{)}\PY{+w}{ }\PY{o}{+}
+\PY{+w}{  }\PY{n+nf}{scale\PYZus{}color\PYZus{}brewer}\PY{p}{(}\PY{n}{palette}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Set1\PYZdq{}}\PY{p}{)}\PY{+w}{ }\PY{o}{+}
+\PY{+w}{  }\PY{n+nf}{labs}\PY{p}{(}\PY{n}{title}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Country Clusters Based on Happiness Factors\PYZdq{}}\PY{p}{,}
+\PY{+w}{       }\PY{n}{x}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Principal Component 1\PYZdq{}}\PY{p}{,}
+\PY{+w}{       }\PY{n}{y}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Principal Component 2\PYZdq{}}\PY{p}{)}\PY{+w}{ }\PY{o}{+}
+\PY{+w}{  }\PY{n+nf}{theme\PYZus{}minimal}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_17_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{26}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} Prepare data for parallel coordinates plot}
+\PY{n}{cluster\PYZus{}means}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{n}{happiness}\PY{+w}{ }\PY{o}{\PYZpc{}\PYZgt{}\PYZpc{}}
+\PY{+w}{  }\PY{n+nf}{group\PYZus{}by}\PY{p}{(}\PY{n}{Cluster}\PY{p}{)}\PY{+w}{ }\PY{o}{\PYZpc{}\PYZgt{}\PYZpc{}}
+\PY{+w}{  }\PY{n+nf}{summarise}\PY{p}{(}\PY{n+nf}{across}\PY{p}{(}\PY{n+nf}{where}\PY{p}{(}\PY{n}{is.numeric}\PY{p}{)}\PY{p}{,}\PY{+w}{ }\PY{n}{mean}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{27}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{cluster\PYZus{}means\PYZus{}long}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{n}{cluster\PYZus{}means}\PY{+w}{ }\PY{o}{\PYZpc{}\PYZgt{}\PYZpc{}}
+\PY{+w}{  }\PY{n+nf}{pivot\PYZus{}longer}\PY{p}{(}\PY{n}{cols}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{o}{\PYZhy{}}\PY{n}{Cluster}\PY{p}{,}\PY{+w}{ }\PY{n}{names\PYZus{}to}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Feature\PYZdq{}}\PY{p}{,}\PY{+w}{ }\PY{n}{values\PYZus{}to}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Mean\PYZus{}Value\PYZdq{}}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{28}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n+nf}{ggplot}\PY{p}{(}\PY{n}{cluster\PYZus{}means\PYZus{}long}\PY{p}{,}\PY{+w}{ }\PY{n+nf}{aes}\PY{p}{(}\PY{n}{x}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n}{Feature}\PY{p}{,}\PY{+w}{ }\PY{n}{y}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n}{Mean\PYZus{}Value}\PY{p}{,}\PY{+w}{ }\PY{n}{group}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n}{Cluster}\PY{p}{,}\PY{+w}{ }\PY{n}{color}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n}{Cluster}\PY{p}{)}\PY{p}{)}\PY{+w}{ }\PY{o}{+}
+\PY{+w}{  }\PY{n+nf}{geom\PYZus{}line}\PY{p}{(}\PY{n}{size}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+m}{1.5}\PY{p}{)}\PY{+w}{ }\PY{o}{+}
+\PY{+w}{  }\PY{n+nf}{geom\PYZus{}point}\PY{p}{(}\PY{n}{size}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+m}{3}\PY{p}{)}\PY{+w}{ }\PY{o}{+}
+\PY{+w}{  }\PY{n+nf}{labs}\PY{p}{(}\PY{n}{title}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Cluster Characteristics Across Happiness Factors\PYZdq{}}\PY{p}{,}
+\PY{+w}{       }\PY{n}{y}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Standardized Mean Value\PYZdq{}}\PY{p}{)}\PY{+w}{ }\PY{o}{+}
+\PY{+w}{  }\PY{n+nf}{theme\PYZus{}minimal}\PY{p}{(}\PY{p}{)}\PY{+w}{ }\PY{o}{+}
+\PY{+w}{  }\PY{n+nf}{theme}\PY{p}{(}\PY{n}{axis.text.x}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n+nf}{element\PYZus{}text}\PY{p}{(}\PY{n}{angle}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+m}{45}\PY{p}{,}\PY{+w}{ }\PY{n}{hjust}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+m}{1}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Warning message:
+“Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+\textcolor{ansi-cyan}{ℹ} Please use `linewidth` instead.”
+    \end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_20_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{29}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} Calculate and display cluster characteristics}
+\PY{n}{cluster\PYZus{}profiles}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{n}{happiness}\PY{+w}{ }\PY{o}{\PYZpc{}\PYZgt{}\PYZpc{}}
+\PY{+w}{  }\PY{n+nf}{group\PYZus{}by}\PY{p}{(}\PY{n}{Cluster}\PY{p}{)}\PY{+w}{ }\PY{o}{\PYZpc{}\PYZgt{}\PYZpc{}}
+\PY{+w}{  }\PY{n+nf}{summarise}\PY{p}{(}
+\PY{+w}{    }\PY{n}{Count}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n+nf}{n}\PY{p}{(}\PY{p}{)}\PY{p}{,}
+\PY{+w}{    }\PY{n}{Avg\PYZus{}GDP}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n+nf}{mean}\PY{p}{(}\PY{n}{`GDP per capita`}\PY{p}{,}\PY{+w}{ }\PY{n}{na.rm}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{k+kc}{TRUE}\PY{p}{)}\PY{p}{,}
+\PY{+w}{    }\PY{n}{Avg\PYZus{}Social}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n+nf}{mean}\PY{p}{(}\PY{n}{`Social support`}\PY{p}{,}\PY{+w}{ }\PY{n}{na.rm}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{k+kc}{TRUE}\PY{p}{)}\PY{p}{,}
+\PY{+w}{    }\PY{n}{Avg\PYZus{}Health}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n+nf}{mean}\PY{p}{(}\PY{n}{`Healthy life expectancy`}\PY{p}{,}\PY{+w}{ }\PY{n}{na.rm}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{k+kc}{TRUE}\PY{p}{)}\PY{p}{,}
+\PY{+w}{    }\PY{n}{Avg\PYZus{}Freedom}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n+nf}{mean}\PY{p}{(}\PY{n}{`Freedom to make life choices`}\PY{p}{,}\PY{+w}{ }\PY{n}{na.rm}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{k+kc}{TRUE}\PY{p}{)}\PY{p}{,}
+\PY{+w}{    }\PY{n}{Avg\PYZus{}Generosity}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n+nf}{mean}\PY{p}{(}\PY{n}{Generosity}\PY{p}{,}\PY{+w}{ }\PY{n}{na.rm}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{k+kc}{TRUE}\PY{p}{)}\PY{p}{,}
+\PY{+w}{    }\PY{n}{Avg\PYZus{}Corruption}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n+nf}{mean}\PY{p}{(}\PY{n}{`Perceptions of corruption`}\PY{p}{,}\PY{+w}{ }\PY{n}{na.rm}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{k+kc}{TRUE}\PY{p}{)}
+\PY{+w}{  }\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{30}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} Print cluster profiles}
+\PY{n+nf}{print}\PY{p}{(}\PY{n}{cluster\PYZus{}profiles}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+\textcolor{ansi-black-intense}{\# A tibble: 5 × 8}
+  Cluster Count Avg\_GDP Avg\_Social Avg\_Health Avg\_Freedom Avg\_Generosity
+  \textcolor{ansi-black-intense}{<fct>}   \textcolor{ansi-black-intense}{<int>}   \textcolor{ansi-black-intense}{<dbl>}
+\textcolor{ansi-black-intense}{<dbl>}      \textcolor{ansi-black-intense}{<dbl>}
+\textcolor{ansi-black-intense}{<dbl>}          \textcolor{ansi-black-intense}{<dbl>}
+\textcolor{ansi-black-intense}{1} 1          31   0.968      1.20       0.759       0.259
+0.106
+\textcolor{ansi-black-intense}{2} 2          23   1.40       1.49       0.990       0.548
+0.275
+\textcolor{ansi-black-intense}{3} 3          36   0.351      0.824      0.387       0.301
+0.203
+\textcolor{ansi-black-intense}{4} 4          21   0.771      1.17       0.661       0.457
+0.290
+\textcolor{ansi-black-intense}{5} 5          45   1.12       1.39       0.867       0.449
+0.130
+\textcolor{ansi-black-intense}{\# ℹ 1 more variable: Avg\_Corruption <dbl>}
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{31}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{cluster\PYZus{}profiles\PYZus{}long}\PY{+w}{ }\PY{o}{\PYZlt{}\PYZhy{}}\PY{+w}{ }\PY{n}{cluster\PYZus{}profiles}\PY{+w}{ }\PY{o}{\PYZpc{}\PYZgt{}\PYZpc{}}
+\PY{+w}{  }\PY{n+nf}{select}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{n}{Count}\PY{p}{)}\PY{+w}{ }\PY{o}{\PYZpc{}\PYZgt{}\PYZpc{}}
+\PY{+w}{  }\PY{n+nf}{pivot\PYZus{}longer}\PY{p}{(}\PY{n}{cols}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{o}{\PYZhy{}}\PY{n}{Cluster}\PY{p}{,}\PY{+w}{ }\PY{n}{names\PYZus{}to}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Feature\PYZdq{}}\PY{p}{,}\PY{+w}{ }\PY{n}{values\PYZus{}to}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Mean\PYZus{}Value\PYZdq{}}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{32}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n+nf}{ggplot}\PY{p}{(}\PY{n}{cluster\PYZus{}profiles\PYZus{}long}\PY{p}{,}\PY{+w}{ }\PY{n+nf}{aes}\PY{p}{(}\PY{n}{x}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n}{Feature}\PY{p}{,}\PY{+w}{ }\PY{n}{y}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n}{Mean\PYZus{}Value}\PY{p}{,}\PY{+w}{ }\PY{n}{fill}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n+nf}{as.factor}\PY{p}{(}\PY{n}{Cluster}\PY{p}{)}\PY{p}{)}\PY{p}{)}\PY{+w}{ }\PY{o}{+}
+\PY{+w}{  }\PY{n+nf}{geom\PYZus{}col}\PY{p}{(}\PY{n}{position}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{dodge\PYZdq{}}\PY{p}{)}\PY{+w}{ }\PY{o}{+}
+\PY{+w}{  }\PY{n+nf}{labs}\PY{p}{(}\PY{n}{title}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Average Feature Values by Cluster\PYZdq{}}\PY{p}{,}
+\PY{+w}{       }\PY{n}{y}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Mean Value\PYZdq{}}\PY{p}{,}
+\PY{+w}{       }\PY{n}{fill}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+s}{\PYZdq{}}\PY{l+s}{Cluster\PYZdq{}}\PY{p}{)}\PY{+w}{ }\PY{o}{+}
+\PY{+w}{  }\PY{n+nf}{theme\PYZus{}minimal}\PY{p}{(}\PY{p}{)}\PY{+w}{ }\PY{o}{+}
+\PY{+w}{  }\PY{n+nf}{theme}\PY{p}{(}\PY{n}{axis.text.x}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{n+nf}{element\PYZus{}text}\PY{p}{(}\PY{n}{angle}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+m}{45}\PY{p}{,}\PY{+w}{ }\PY{n}{hjust}\PY{+w}{ }\PY{o}{=}\PY{+w}{ }\PY{l+m}{1}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_24_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+
+    % Add a bibliography block to the postdoc
+
+
+
+\end{document}

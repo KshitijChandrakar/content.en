@@ -16,30 +16,23 @@ class calculator extends JFrame implements ActionListener {
   // store operator and operands
   String s0, s1, s2;
 
-  // default constructor
   calculator() {
     s0 = s1 = s2 = "";
   }
 
-  // main function
   public static void main(String args[]) {
-    // create a frame
     f = new JFrame("calculator");
 
     try {
-      // set look and feel
       UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
     } catch (Exception e) {
       System.err.println(e.getMessage());
     }
 
-    // create a object of class
     calculator c = new calculator();
 
-    // create a textfield
     l = new JTextField(16);
 
-    // set the textfield to non editable
     l.setEditable(false);
 
     // create number buttons and some operators
