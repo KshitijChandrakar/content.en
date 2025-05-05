@@ -1,0 +1,16 @@
+ #!/bin/bash
+for folder in ./*; do
+    echo "## $folder"
+    for file in "$folder"/*.java; do
+        echo "### $file"
+        echo "#### Code"
+        echo \`\`\` java
+        cat "$file"
+        echo \`\`\`
+
+        echo "#### Output"
+        echo "!["$file"](" "$file".png ")"
+
+    done
+done
+

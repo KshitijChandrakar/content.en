@@ -16,18 +16,17 @@ mkdir -p screenshots
 #Clear the terminal beforehand
 clear
 # Loop through all R files in the current directory
-for file in *.R; do
+for file in *.java; do
     # Print file name for reference
     echo "Running $file..."
 
-    # Run the R script
-    Rscript "$file"
+    java "$file"
 
     # Take a screenshot of the terminal
     spectacle --activewindow -a -n -b -o "screenshots/${file%.R}.png"
 
     # crop it
-    mogrify -crop 955x400+69+190 "screenshots/${file%.R}.png"
+    # mogrify -crop 955x400+69+190 "screenshots/${file%.R}.png"
     # Clear the terminal
     clear
 done
