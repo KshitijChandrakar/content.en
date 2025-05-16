@@ -15,9 +15,9 @@
               "state": {
                 "file": "Software Engineering.canvas",
                 "viewState": {
-                  "x": 346.82692023785273,
-                  "y": 1492.9436048430862,
-                  "zoom": -0.48253784775733927
+                  "x": 229.7471249238847,
+                  "y": 9525.816795899727,
+                  "zoom": -0.0743446711699198
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -81,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "e46b630ffb3058bc",
@@ -174,11 +175,23 @@
   },
   "active": "442556b28b968d3c",
   "lastOpenFiles": [
+    "Pasted image 20250515011725.png",
+    "Pasted image 20250515011712.png",
+    "Pasted image 20250515010308.png",
+    "Pasted image 20250515003748.png",
+    "Pasted image 20250515003437.png",
+    "Pasted image 20250515003215.png",
+    "Untitled.canvas",
+    "Software Engineering.canvas",
+    "Excalidraw/Drawing 2025-05-15 00.28.19.excalidraw.md",
+    "Pasted image 20250515002303.png",
+    "Notes/Semester 4/SE/Syllabus finalized in meeting 19_3_25 for unit 4 and unit 5.pdf",
+    "Notes/Semester 4/SE/lu56834ep91q.tmp",
+    "Notes/Semester 4/SE/Syllabus finalized in meeting 19_3_25 for unit 4 and unit 5.docx",
+    "Pasted image 20250514233424.png",
+    "Pasted image 20250514233301.png",
+    "Pasted image 20250514233011.png",
     "Pasted image 20250514203144.png",
-    "Pasted image 20250514202230.png",
-    "Pasted image 20250514202209.png",
-    "Pasted image 20250514201327.png",
-    "Pasted image 20250514201206.png",
     "Notes/Semester 4/SE/Presentations/12. White box testing.pdf",
     "Notes/Semester 4/SE/Presentations/16. Risk Management.pdf",
     "Notes/Semester 4/SE/Presentations/15. Software Quality.pdf",
@@ -186,20 +199,10 @@
     "Notes/Semester 4/SE/Presentations/14. Software Metrics.pdf",
     "Notes/Semester 4/SE/Presentations/11. Software Testing.pdf",
     "Notes/Semester 4/SE/Presentations/10. Reliability Metrics Practice Ques + Solutions.pdf",
-    "Notes/Semester 4/SE/Presentations/9. Software Reliability.pdf",
-    "Notes/Semester 4/SE/Presentations/8. Software Design.pdf",
-    "Notes/Semester 4/SE/Presentations/6. DFD.pdf",
-    "Pasted image 20250514194805.png",
-    "Software Engineering.canvas",
     "Untitled 1.md",
-    "Notes/Semester 4/DCN Lab/Assignments/Assignment 7/1.jpeg",
     "Notes/Semester 4/DCN Lab/Assignments/Assignment 7/Experiment 7.md",
-    "Notes/Semester 4/DCN Lab/Assignments/Assignment 7/4.png",
-    "Notes/Semester 4/DCN Lab/Assignments/Assignment 7/3.png",
     "Notes/Semester 4/DCN/Notes/Oof.md",
     "Notes/Semester 4/DCN/Notes/Drawing 2025-03-05 20.35.00.excalidraw.md",
-    "Notes/Semester 4/DCN Lab/Screenshot_20250201_222859.png",
-    "Pasted image 20250201222415.png",
     "Notes/Semester 4/DCN Lab/Assignment 2.md",
     "Notes/DAA/LabFile.md",
     "Notes/DAA/Assignment 1.md",
@@ -219,7 +222,6 @@
     "Notes/DBMS/Experiments/Experiment 14.md",
     "Notes/DBMS/Experiments/Experiment 11.md",
     "Notes/DBMS/Experiments/Experiment 12.md",
-    "posts/Internships.md",
-    "posts/Anthropocene Mug.md"
+    "posts/Internships.md"
   ]
 }
